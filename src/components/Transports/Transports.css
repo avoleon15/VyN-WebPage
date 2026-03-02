@@ -1,0 +1,8 @@
+#transport-title{
+    text-align: center;
+}
+
+#transports-container{
+    display: flex;
+    justify-content: space-evenly;
+}

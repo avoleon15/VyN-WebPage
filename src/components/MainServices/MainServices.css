@@ -1,0 +1,11 @@
+#service-title{
+    text-align: center;
+}
+
+#service-container{
+    margin: 2rem 5rem 2rem 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
