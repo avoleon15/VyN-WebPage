@@ -13,20 +13,20 @@ function Transports(){
             <div id='transports-container'>
             <TransportCard
             image={seafreight}
-            title="a"
-            description="a"
+            title="Seafreigth"
+            description="Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil."
             link="A"
             />
             <TransportCard
             image={airfreight}
-            title="a"
-            description="a"
+            title="Airfreight"
+            description="Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil."
             link="A"
             />
             <TransportCard
             image={overland}
-            title="a"
-            description="a"
+            title="Overland"
+            description="Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil."
             link="A"
             />
             </div>
