@@ -3,9 +3,9 @@
     width: 100%;
     height: 60px;
 
-    padding: 5px 0 10px 0;
+    padding: 10px 0 10px 0;
 
-    background: linear-gradient(270deg,rgba(166, 28, 28, 1) 0%, rgba(208, 37, 37, 1) 38%, rgba(217, 125, 125, 1) 86%, rgba(255, 201, 201, 1) 99%);
+    background: linear-gradient(270deg,#a61c1c 0%, rgba(208, 37, 37, 1) 38%, rgb(211, 110, 110) 86%, rgb(255, 175, 175) 99%);
 }
 
 #left-nav{
@@ -25,6 +25,7 @@
 
 #center-nav{
     width: 50%;
+    margin: 0px 15% 0px 0px;
 }
 
 .list-nav{
@@ -32,7 +33,7 @@
     list-style: none;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 

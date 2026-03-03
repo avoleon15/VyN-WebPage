@@ -15,6 +15,7 @@ function Navbar(){
                     <li>Servicios</li>
                     <li>Contactanos</li>
                     <li>EN/ESP</li>
+                    <li>DarkMODE</li>
                 </ul>
             </div>
             <div id="right-nav">
