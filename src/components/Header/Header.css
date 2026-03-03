@@ -34,18 +34,19 @@
 #hero-header-left, #hero-header-right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
-    margin: 5px 30px 5px 30px;
+    margin: 5px 0px 5px 30px;
 }
 
 #hero-header-left{
-    width: 65%;
+    width: 60%;
 }
 
 #hero-title{
     font-size: 5rem;
+    margin: 70px 0px 20px 0px;
 }
 
 #hero-paragraph{
@@ -53,12 +54,41 @@
     color: var(--text-ligth);
 }
 
-#hero-header-right{
-    width: 35%;
+#hero-buttons{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#hero-button{
+.track-button{
+    width: 45%;
+    padding: 15px 0px 15px 0px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    transition: all 1s;
+}
+
+.track-button:hover{
+    cursor: pointer;
+    background-color: var(--accent);
+}
+
+.services-button{
+    width: 40%;
+    padding: 15px 0px 15px 0px;
     background-color: var(--background-secondary);
+    border: none;
+    border-radius: 5px;
+    transition: all 1s;
+
+}
+
+.services-button:hover{
+    cursor: pointer;
+    background-color: var(--white);
 }
 
 nav {

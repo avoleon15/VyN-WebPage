@@ -19,7 +19,7 @@ function Navbar(){
                 </ul>
             </div>
             <div id="right-nav">
-                <button>Log in</button>
+                <button id='login-nav'>Log in</button>
             </div>
         </nav>
     )

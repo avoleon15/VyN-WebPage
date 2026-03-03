@@ -6,6 +6,6 @@
     margin: 2rem 5rem 2rem 5rem;
 
     display: flex;
-    justify-content: space-around;
-    gap: 5%;
+    gap: 20px;
+    flex-wrap: wrap;
 }

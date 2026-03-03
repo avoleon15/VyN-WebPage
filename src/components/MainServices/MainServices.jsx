@@ -12,26 +12,31 @@ function MainServices(){
             <ServiceComponent
                 icon={faPlane}
                 title="Transporte Aéreo"
+                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
             />
 
             <ServiceComponent
                 icon={faShip}
                 title="Transporte Marítimo"
+                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
             />
 
             <ServiceComponent
                 icon={faTruck}
                 title="Transporte Terrestre"
+                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
             />
 
             <ServiceComponent
                 icon={faBoxOpen}
                 title="Cargas Especiales"
+                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
             />
 
             <ServiceComponent
                 icon={faShield}
                 title="Seguros de Transporte"
+                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
             />
             </div>
         </section>

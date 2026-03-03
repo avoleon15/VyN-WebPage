@@ -12,9 +12,10 @@ function Header(){
                         <p id='hero-paragraph'>
                             Tu carga, nuestra responsabilidad. Gestionamos toda tu cadena logística con más de 20 años de experiencia, operando en puertos, aeropuertos y aduanas para que tu negocio nunca se detenga.
                         </p>
-                    </div>
-                    <div id="hero-header-right">
-                        <button className='hero-button'>Traquea tu paquete</button>
+                        <div id='hero-buttons'>
+                            <button className='track-button'>Traquea tu paquete</button>
+                            <button className='services-button'>Ver Transportes</button>
+                        </div>
                     </div>
                 </div>
                 
