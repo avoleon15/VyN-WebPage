@@ -1,37 +1,62 @@
-.service-component{
-    width: 30%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: start;
+.service-component {
+    cursor: pointer;
+    border: 1px solid var(--background-secondary);
+    overflow: hidden;
+    transition: all 0.3s;
 
-    background-color: var(--background-secondary);
-    border: 1px solid black;
+    width: 100%;
 }
 
-.service-info-component{
-    height: 60%;
-    margin: 0px 15px 0px 15px;
+.service-component:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--accent);
+}
+
+.service-info-component {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+}
+
+.service-component-title {
+    flex: 1;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.chevron {
+    font-size: 13px;
+    color: var(--text-light);
+    transition: transform 0.3s ease;
+}
+
+.chevron.rotated {
+    transform: rotate(180deg);
 }
 
 .icon-component{
-    font-size: 1rem;
-    color: var(--white);
+    background: var(--primary);
+    color: var(--background);
     padding: 1rem;
-    background-color: var(--primary);
-    margin: 5px;
-
+    border-radius: 10px;
 }
 
-.service-component-title{
-    font-size: 1.3rem;
-    font-weight: 100;
-    color: var(--text);
-    margin: 0px;
+.service-component-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    padding: 0 20px;
 }
 
-.service-component-description{
-    font-size: 0.8rem;
+.visible {
+    max-height: 100px;
+    padding: 0 20px 16px;
+}
+
+.service-component-description p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
     color: var(--text-light);
 }

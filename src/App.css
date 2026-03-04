@@ -8,9 +8,9 @@ p, li, a, button   { font-family: 'Inter', sans-serif; }
     --secondary: #d97d7d;
     --accent: #d02525;
     --background: #ebebeb;
-    --background-secondary: #e9e8e8;
+    --background-secondary: #dcdcdc;
     --text: #000000;
-    --text-light:rgb(78, 78, 78)b;
+    --text-light:rgb(78, 78, 78);
     --white: #ffffff;
 }
 

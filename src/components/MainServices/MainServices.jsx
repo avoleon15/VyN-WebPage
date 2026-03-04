@@ -7,12 +7,15 @@ function MainServices(){
 
     return(
         <section id="mainService">
-            <h3 id='service-title'>Principales Servicios</h3>
+            <div id='service-info'>
+                <h3 id='service-title'>Principales Servicios</h3>
+                <p id='service-subtitle'>Llevando soluciones a todas partes del mundo</p>
+            </div>
             <div id='service-container'>
             <ServiceComponent
                 icon={faPlane}
                 title="Transporte Aéreo"
-                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
+                description="tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino. tranporte via martimia asegurandoq que los paquetees lleguen seguros a su destino."
             />
 
             <ServiceComponent
