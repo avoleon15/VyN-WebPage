@@ -18,6 +18,7 @@ function ServiceComponent(props){
             </div>
             <div className={`service-component-description ${open ? 'visible' : ''}`}>
                 <p>{description}</p>
+                <button className='service-button'>Ver mas</button>
             </div>
 
         </div>

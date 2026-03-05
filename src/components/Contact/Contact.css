@@ -1,0 +1,46 @@
+#contact{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.contact-left{
+    width: 55%;
+    margin: 10px 0px 10px 0px;
+}
+
+.contact-title{
+    font-size: 2.5rem;
+    color: var(--text);
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--background-secondary);
+}
+
+.contact-description{
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.contact-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+}
+
+.contact-button{
+    font-size: 1rem;
+    width: 50%;
+    padding: 15px 0px 15px 0px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    transition: all 1s;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+    background-color: var(--accent);
+}

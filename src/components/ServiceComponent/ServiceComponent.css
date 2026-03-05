@@ -60,3 +60,19 @@
     font-size: 15px;
     color: var(--text-light);
 }
+
+.service-button{
+    font-size: 0.8rem;
+    color: var(--white);
+    background-color: var(--accent);
+    padding: 12px 8px 12px 8px;
+    border: none;
+    border-radius: 10px;
+    
+    transition: all 0.7s;
+}
+
+.service-button:hover{
+    background-color: var(--secondary);
+    cursor: pointer;
+}
