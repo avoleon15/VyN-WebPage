@@ -12,10 +12,10 @@ function Navbar(){
             </div>
             <div id="center-nav">
                 <ul className='list-nav'>
-                    <li>Servicios</li>
-                    <li>Contactanos</li>
-                    <li>EN/ESP</li>
-                    <li>DarkMODE</li>
+                    <li><a href="#mainService">Servicios</a></li>
+                    <li><a>Contactanos</a></li>
+                    <li><a>Nosotros</a></li>
+                    <li><a>EN/ES</a></li>
                 </ul>
             </div>
             <div id="right-nav">

@@ -1,6 +1,6 @@
 #mainService{
     display: flex;
-    margin: 200px 5% 200px 5%;
+    margin: 120px 5% 120px 5%;
 
 }
 
@@ -12,7 +12,7 @@
 
 #service-title{
     color: var(--text);
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 5% 0px 2% 0px;
 }
 

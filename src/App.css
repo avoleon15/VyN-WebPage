@@ -9,9 +9,15 @@ p, li, a, button   { font-family: 'Inter', sans-serif; }
     --accent: #d02525;
     --background: #ebebeb;
     --background-secondary: #dcdcdc;
+    --background-alternative: #8B0000;
     --text: #000000;
     --text-light:rgb(78, 78, 78);
     --white: #ffffff;
+    --clear: #dddddd;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{

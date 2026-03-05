@@ -9,12 +9,15 @@ function Transports(){
 
     return(
         <section id="transports">
-            <h3 id='transport-title'>Transportes</h3>
+            <div id="transports-info">
+                <p id='transports-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis.</p>
+                <h3 id='transport-title'>Transportes</h3>
+            </div>
             <div id='transports-container'>
             <TransportCard
             image={seafreight}
             title="Seafreigth"
-            description="Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil."
+            description="Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil. Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil."
             link="A"
             />
             <TransportCard

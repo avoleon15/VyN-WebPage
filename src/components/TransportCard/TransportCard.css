@@ -6,11 +6,15 @@
     width: 30%;
 
     background: var(--white);
-    border-left: 4px solid var(--accent);
     border-radius: 10px;
+    border-left: 4px solid var(--background-secondary);
     box-shadow: none;
 
     transition: all 1s;
+}
+
+.transport-card:hover{
+    border-left: 6px solid var(--accent);
 }
 
 .transport-image-container{
@@ -29,15 +33,16 @@
 .transport-info-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 50%;
 
-    margin: 5%;
+    margin: 5% 5% 8% 5%;
 }
 
 .transport-title{
     font-size: 2rem;
     color: var(--text);
+    margin: 2% 5% 2% 2%;
 }
 
 .transport-description{

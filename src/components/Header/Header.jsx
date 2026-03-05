@@ -1,3 +1,4 @@
+import Navbar from '../Navbar/Navbar.jsx'
 import './Header.css'
 
 function Header(){
@@ -6,6 +7,7 @@ function Header(){
     return(
         <>
             <section id="header">
+                <Navbar/>
                 <div id='hero-header'>
                     <div id="hero-header-left">
                         <h2 id='hero-title'>Conectamos tu mundo, movemos tu negocio.</h2>

@@ -62,6 +62,7 @@
 }
 
 .track-button{
+    font-size: 1rem;
     width: 45%;
     padding: 15px 0px 15px 0px;
     background-color: var(--primary);
@@ -77,6 +78,7 @@
 }
 
 .services-button{
+    font-size: 1rem;
     width: 40%;
     padding: 15px 0px 15px 0px;
     background-color: var(--background-secondary);
