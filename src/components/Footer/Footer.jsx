@@ -29,6 +29,9 @@ function Footer(){
                     <li><a>Link</a></li>
                 </ul>
             </div>
+            <div className="footer-credits">
+                <p>© 2026 VYN Logistics. Todos los derechos reservados.</p>
+            </div>
         </footer>
     )
 }

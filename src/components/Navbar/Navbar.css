@@ -5,7 +5,7 @@
 
     padding: 10px 0px 10px 0px;
 
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.071);
 }
 
 #left-nav{
@@ -25,12 +25,11 @@
 
 #center-nav{
     width: 50%;
-    margin: 0px 15% 0px 0px;
 }
 
 a{
     text-decoration: none;
-    color: var(--text);
+    color: var(--white);
 }
 
 a:hover{
@@ -42,7 +41,8 @@ a:hover{
     list-style: none;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5%;
     align-items: center;
 }
 
@@ -55,15 +55,16 @@ a:hover{
 }
 
 #login-nav{
-    background-color: var(--background);
+    background: none;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
-    border: none;
-    transition: all 0.3s;
+    border: 1px solid var(--white);
+    transition: all 0.7s;
+    color: var(--white);
 }
 
 #login-nav:hover{
-    background-color: var(--secondary);
-    color:var(--white);
+    background-color: var(--white);
+    color:var(--text);
     cursor: pointer;
 }

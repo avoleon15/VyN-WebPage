@@ -1,3 +1,4 @@
+import Forms from '../Forms/Forms.jsx'
 import './Contact.css'
 
 function Contact(){
@@ -8,7 +9,7 @@ function Contact(){
                 <p className='contact-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laudantium nam vel minus odio, mollitia voluptatibus sequi </p>
             </div>
             <div className='contact-right'>
-                <button className='contact-button'>Contactanos</button>
+                <Forms/>
             </div>
         </div>
     )

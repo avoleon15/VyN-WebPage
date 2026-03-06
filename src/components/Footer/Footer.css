@@ -5,7 +5,7 @@
     align-items: center;
 
     padding: 60px 0px 30px 0px;
-    background: var(--background-secondary);
+    background: var(--background);
 }
 
 .footer-logo{
@@ -20,18 +20,29 @@
 }
 
 .footer-list{
-    border-left: 1px solid black;
+    border-left: 1px solid var(--white-light);
     opacity: 0.8;
 
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    color: var(--text);
 }
 
 .footer-list p{
     color: var(--text);
 }
 
-.footer-list li{
-    color: var(--text-light);
+.footer-list a{
+    color: var(--text);
+}
+
+.footer-credits{
+    margin: 0px 10% 40px 10%;
+    border-top: 1px solid var(--white-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

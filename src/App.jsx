@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Header/>
-      <MainService/>
       <Transport/>
+      <MainService/>
       <Contact/>
       <Footer/>
     </>
