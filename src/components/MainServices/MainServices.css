@@ -1,0 +1,33 @@
+#mainService{
+    display: flex;
+    margin: 120px 5% 120px 5%;
+
+}
+
+#service-info{
+    width: 40%;
+    height: auto;
+    background: var(--background);
+}
+
+#service-title{
+    color: var(--text);
+    font-size: 5rem;
+    margin: 5% 0px 2% 0px;
+}
+
+#service-subtitle{
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 50;
+}
+
+#service-container{
+    width: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+}

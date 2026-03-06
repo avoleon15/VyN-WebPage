@@ -1,0 +1,78 @@
+.service-component {
+    cursor: pointer;
+    border: 1px solid var(--background-secondary);
+    overflow: hidden;
+    transition: all 0.3s;
+
+    width: 100%;
+}
+
+.service-component:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--accent);
+}
+
+.service-info-component {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+}
+
+.service-component-title {
+    flex: 1;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.chevron {
+    font-size: 13px;
+    color: var(--text-light);
+    transition: transform 0.3s ease;
+}
+
+.chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.icon-component{
+    background: var(--primary);
+    color: var(--background);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.service-component-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    padding: 0 20px;
+}
+
+.visible {
+    max-height: 100px;
+    padding: 0 20px 16px;
+}
+
+.service-component-description p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: var(--text-light);
+}
+
+.service-button{
+    font-size: 0.8rem;
+    color: var(--white);
+    background-color: var(--accent);
+    padding: 12px 8px 12px 8px;
+    border: none;
+    border-radius: 10px;
+    
+    transition: all 0.7s;
+}
+
+.service-button:hover{
+    background-color: var(--secondary);
+    cursor: pointer;
+}
