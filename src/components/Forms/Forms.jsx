@@ -24,8 +24,8 @@ function Forms() {
                 <textarea id='message' placeholder='Cuéntanos sobre tu carga...' rows='6' name='message'/>
             </div>
 
-            <button type='submit' id='form-submit'>
-                Enviar mensaje
+            <button type='submit' id='contact-submit'>
+                Enviar
             </button>
         </form>
     )
