@@ -81,7 +81,7 @@
     font-size: 1rem;
     width: 25%;
     padding: 15px 0px 15px 0px;
-    background-color: var(--background-secondary);
+    background-color: var(--white);
     border: none;
     border-radius: 5px;
     transition: all 1s;
@@ -90,7 +90,7 @@
 
 .services-button:hover{
     cursor: pointer;
-    background-color: var(--white);
+    background-color: var(--background-secondary);
 }
 
 nav {
