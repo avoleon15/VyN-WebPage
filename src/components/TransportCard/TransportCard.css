@@ -65,3 +65,59 @@
     color:var(--white);
     cursor: pointer;
 }
+
+@media (max-width: 768px){
+    .transport-card{
+        height: 475px;
+        width: 100%;
+
+        border-left: none;
+    }
+    .transport-card:hover{
+        border-left: none;
+    }
+    .transport-image-container{
+        height: 250px;
+    }
+    .transport-info-container{
+        margin: 3% 3% 6% 3%;
+    }
+    .transport-title{
+        font-size: 1.75rem;
+    }
+    .transport-description{
+        font-size: 0.9rem;
+    }
+    .transport-button{
+        font-size: 0.9rem;
+        padding: 8px 3px 8px 3px;
+    }
+}
+
+@media (max-width: 430px){
+    .transport-card{
+        height: 350px;
+        width: 100%;
+
+        border-left: none;
+    }
+    .transport-card:hover{
+        border-left: none;
+    }
+    .transport-image-container{
+        height: 175px;
+    }
+    .transport-info-container{
+        height: 60%;
+    }
+    .transport-title{
+        font-size: 1.5rem;
+    }
+    .transport-description{
+        font-size: 0.8rem;
+    }
+    .transport-button{
+        font-size: 0.8rem;
+        padding: 4px 1px 4px 1px;
+    }
+}

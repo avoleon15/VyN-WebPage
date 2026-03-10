@@ -97,3 +97,15 @@ nav {
     position: relative;
     z-index: 1;
 }
+
+@media (min-width: 1024px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 430px){
+
+}

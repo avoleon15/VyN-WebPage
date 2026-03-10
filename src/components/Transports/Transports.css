@@ -25,3 +25,39 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media (max-width: 768px){
+    #transports-info{
+        flex-direction: column-reverse;
+    }
+    #transport-title{
+        font-size: 4rem;
+        margin: 40px 0px 40px 0px;
+    }
+    #transports-description{
+        font-size: 0.9rem;
+    }
+    #transports-container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 10%;
+    }
+}
+
+@media (max-width: 430px){
+    #transports{
+        padding: 20px 0px 40px 0px;
+    }
+    #transport-title{
+        font-size: 3rem;
+        margin: 30px 0px 15px 0px;
+    }
+    #transports-description{
+        font-size: 0.8rem;
+    }
+    #transports-container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 8%;
+    }
+}
