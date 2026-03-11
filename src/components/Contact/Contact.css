@@ -1,20 +1,24 @@
 #contact{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 100px 0px 100px 0px;
 
     background: var(--background-alternative);
 }
 
-.contact-left{
-    width: 40%;
-    margin: 10px 0px 10px 0px;
+#contact-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+
+    margin: 5%;
+}
+
+.contact-info{
+    width: 100%;
 }
 
 .contact-title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--white);
     padding-bottom: 10px;
 }
@@ -24,24 +28,48 @@
     color: var(--white-light);
 }
 
-.contact-right{
+.contact-forms{
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 100%;
 }
 
-.contact-button{
-    font-size: 1rem;
-    width: 50%;
-    padding: 15px 0px 15px 0px;
-    background-color: var(--white);
-    border: none;
-    border-radius: 5px;
-    color: var(--text);
-    transition: all 1s;
+@media (max-width: 1024px){
+    .contact-title{
+        font-size: 2.5rem;
+    }
+    .contact-description{
+        font-size: 0.9rem;
+    }
 }
 
-.contact-button:hover{
-    cursor: pointer;
-    background-color: var(--background-secondary);
+@media (max-width: 768px){
+    #contact{
+        padding: 60px 0px 60px 0px;
+    }
+    #contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info{
+        margin-bottom: 60px;
+    }
+    .contact-title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 430px){
+    #contact{
+        padding: 30px 0px 30px 0px;
+    }
+    .contact-info{
+        margin-bottom: 40px;
+    }
+    .contact-title{
+        font-size: 2rem;
+    }
+    .contact-description{
+        font-size: 0.8rem;
+    }
 }
