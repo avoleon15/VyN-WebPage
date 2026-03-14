@@ -66,6 +66,15 @@
     cursor: pointer;
 }
 
+@media (max-width: 1024px){
+    .transport-title{
+        font-size: 1.75rem;
+    }
+    .transport-description{
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 768px){
     .transport-card{
         height: 475px;
@@ -81,12 +90,6 @@
     }
     .transport-info-container{
         margin: 3% 3% 6% 3%;
-    }
-    .transport-title{
-        font-size: 1.75rem;
-    }
-    .transport-description{
-        font-size: 0.9rem;
     }
     .transport-button{
         font-size: 0.9rem;
