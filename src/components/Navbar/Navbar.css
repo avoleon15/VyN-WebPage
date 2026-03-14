@@ -24,16 +24,7 @@
 }
 
 #center-nav{
-    width: 50%;
-}
-
-a{
-    text-decoration: none;
-    color: var(--white);
-}
-
-a:hover{
-    text-decoration: underline;
+    width: 60%;
 }
 
 .list-nav{
@@ -46,8 +37,18 @@ a:hover{
     align-items: center;
 }
 
+.list-nav a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--background-secondary);
+}
+
+.list-nav a:hover{
+    text-decoration: underline;
+}
+
 #right-nav{
-    width: 30%;
+    width: 20%;
 
     display: flex;
     justify-content: center;
@@ -58,13 +59,58 @@ a:hover{
     background: none;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
-    border: 1px solid var(--white);
+    border: 1px solid var(--background-secondary);
     transition: all 0.7s;
-    color: var(--white);
+    color: var(--background-secondary);
 }
 
 #login-nav:hover{
-    background-color: var(--white);
-    color:var(--text);
+    background-color: var(--background-secondary);
+    color: var(--text);
     cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .list-nav a{
+        font-size: 0.9rem;
+    }
+
+    .footer-list a{
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+    .footer-credits{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    .list-nav a{
+        font-size: 0.8rem;
+    }
+    #center-nav{
+        width: 65%;
+    }
+    #right-nav{
+        width: 15%;
+    }
+    #login-nav{
+        padding: 7px 14px 7px 14px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 430px){
+    #navbar{
+        background: none;
+    }
+    #left-nav{
+        width: 30%;
+    }
+    #center-nav{
+        display: none;
+    }
+    #right-nav{
+        display: none;
+    }
 }

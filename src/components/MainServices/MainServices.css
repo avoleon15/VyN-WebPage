@@ -1,13 +1,12 @@
 #mainService{
     display: flex;
     margin: 120px 5% 120px 5%;
-
 }
 
 #service-info{
     width: 40%;
     height: auto;
-    background: var(--background);
+    margin: 10px 5% 10px 5%;
 }
 
 #service-title{
@@ -30,4 +29,51 @@
 
     border-left: 4px solid var(--accent);
     border-radius: 10px;
+}
+
+@media (max-width: 1024px){
+    #mainService{
+        margin: 100px 5% 100px 5%;
+    }
+    #service-title{
+        font-size: 4rem;
+    }
+    #service-subtitle{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    #mainService{
+        flex-direction: column;
+        margin: 80px 5% 80px 5%;
+    }
+    #service-info{
+        width: 90%;
+        margin-bottom: 70px;
+    }
+    #service-title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #service-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px){
+    #mainService{
+        margin: 40px 5% 40px 5%;
+    }
+    #service-info{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    #service-title{
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    #service-subtitle{
+        font-size: 0.8rem;
+    }
 }

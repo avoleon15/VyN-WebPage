@@ -26,7 +26,7 @@
 }
 
 .chevron {
-    font-size: 13px;
+    font-size: 0.8rem;
     color: var(--text-light);
     transition: transform 0.3s ease;
 }
@@ -57,7 +57,7 @@
 .service-component-description p {
     display: flex;
     flex-wrap: wrap;
-    font-size: 15px;
+    font-size: 0.9rem;
     color: var(--text-light);
 }
 
@@ -65,7 +65,7 @@
     font-size: 0.8rem;
     color: var(--white);
     background-color: var(--accent);
-    padding: 12px 8px 12px 8px;
+    padding: 12px 20px 12px 20px;
     border: none;
     border-radius: 10px;
     
@@ -75,4 +75,44 @@
 .service-button:hover{
     background-color: var(--secondary);
     cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .service-component-title{
+        font-size: 1rem;
+    }
+    .chevron{
+        font-size: 0.7rem;
+    }
+    .icon-component{
+        font-size: 0.8rem;
+        padding: 0.9rem;
+    }
+    .service-component-description p{
+        font-size: 0.8rem;
+    }
+    .service-button{
+        font-size: 0.7rem;
+        padding: 11px 18px 11px 18px;
+    }
+}
+
+@media (max-width: 430px){
+    .service-component-title{
+        font-size: 0.9rem;
+    }
+    .chevron{
+        font-size: 0.6rem;
+    }
+    .icon-component{
+        font-size: 0.7rem;
+        padding: 0.8rem;
+    }
+    .service-component-description p{
+        font-size: 0.7rem;
+    }
+    .service-button{
+        font-size: 0.6rem;
+        padding: 9px 15px 9px 15px;
+    }
 }
