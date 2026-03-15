@@ -28,6 +28,25 @@
     color: var(--white-light);
 }
 
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 10px;
+}
+
+.contact-sections{
+    background: var(--accent);
+    border-radius: 50px;
+    padding: 8px 20px 8px 20px;
+    color: var(--white);
+
+    margin: 10px 0px 0px 10px;
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+
 .contact-forms{
     display: flex;
     justify-content: flex-end;
