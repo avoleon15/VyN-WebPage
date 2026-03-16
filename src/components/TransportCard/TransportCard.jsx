@@ -2,7 +2,7 @@ import './TransportCard.css';
 
 function TransportCard(props){
 
-    const {image, title, description} = props;
+    const {image, title, description, button} = props;
     const imageAlt = image + " image"
 
     return(
@@ -13,7 +13,7 @@ function TransportCard(props){
             <div className='transport-info-container'>
                 <h4 className='transport-title'>{title}</h4>
                 <p className='transport-description'>{description}</p>
-                <button className='transport-button'>Mirar mas</button>
+                <button className='transport-button'>{button}</button>
             </div>
         </div>
     )

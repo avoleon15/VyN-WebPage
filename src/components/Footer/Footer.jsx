@@ -1,8 +1,9 @@
 import vynLogo from "../../assets/images/VyN-logo.png";
+import { useLanguage } from '../../context/LanguageContext.jsx';
 import './Footer.css';
 
 function Footer(){
-
+    const { text } = useLanguage()
 
     return(
         <footer id='footer'>
@@ -30,7 +31,7 @@ function Footer(){
                 </ul>
             </div>
             <div className="footer-credits">
-                <p>© 2026 VYN Logistics. Todos los derechos reservados.</p>
+                <p>{text.footer.credits}</p>
             </div>
         </footer>
     )

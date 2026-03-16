@@ -6,7 +6,7 @@ import './ServiceComponent.css';
 
 function ServiceComponent(props){
 
-    const {icon, title, description} = props;
+    const {icon, title, description, button} = props;
     const[open, setOpen] = useState(false)
 
     return(
@@ -18,7 +18,7 @@ function ServiceComponent(props){
             </div>
             <div className={`service-component-description ${open ? 'visible' : ''}`}>
                 <p>{description}</p>
-                <button className='service-button'>Ver mas</button>
+                <button className='service-button'>{button}</button>
             </div>
 
         </div>

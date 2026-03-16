@@ -47,6 +47,19 @@
     text-decoration: underline;
 }
 
+#language-toggle{
+    background: none;
+    border: 1px solid var(--background-secondary);
+    border-radius: 10px;
+    color: var(--background-secondary);
+    padding: 3px 10px;
+    font-size: 1rem;
+}
+
+#language-toggle:hover{
+    cursor: pointer;
+}
+
 #right-nav{
     width: 20%;
 
@@ -59,14 +72,15 @@
     background: none;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
-    border: 1px solid var(--background-secondary);
+    background: var(--background-secondary);
+    border: none;
     transition: all 0.7s;
-    color: var(--background-secondary);
+    color: none;
 }
 
 #login-nav:hover{
-    background-color: var(--background-secondary);
-    color: var(--text);
+    border: 1px solid var(--white);
+    background: var(--white);
     cursor: pointer;
 }
 
