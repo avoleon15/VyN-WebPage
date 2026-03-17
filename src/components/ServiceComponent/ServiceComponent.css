@@ -51,7 +51,7 @@
 
 .visible {
     max-height: 100px;
-    padding: 0 20px 16px;
+    padding: 0 20px 3rem;
 }
 
 .service-component-description p {
