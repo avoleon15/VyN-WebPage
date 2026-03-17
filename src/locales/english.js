@@ -3,7 +3,7 @@ export const english = {
         "services" : "Services",
         "contact" : "Contact Us",
         "about" : "About Us",
-        "language" : "Español",
+        "language" : "Language",
         "log" : "Log in"
     },
     "header" : {

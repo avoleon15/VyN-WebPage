@@ -5,15 +5,14 @@ import { spanish } from '../locales/spanish.js'
 const LanguageContext = createContext()
 
 export function LanguageProvider({ children }) {
-    const [language, setLanguage] = useState('english')
-    const text = language === 'spanish' ? spanish : english
+    const [language, setLanguage] = useState('es')
+    const text = language === 'es' ? spanish : english
 
-    const toggleLanguage = () => {
-        setLanguage(prev => prev === 'spanish' ? 'english' : 'spanish')
-    }
+    const setSpanish = () => setLanguage('es')
+    const setEnglish = () => setLanguage('en')
 
     return (
-        <LanguageContext.Provider value={{ text, language, toggleLanguage }}>
+        <LanguageContext.Provider value={{ text, language, setSpanish, setEnglish }}>
             {children}
         </LanguageContext.Provider>
     )

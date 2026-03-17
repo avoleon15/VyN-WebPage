@@ -20,7 +20,6 @@ function ServiceComponent(props){
                 <p>{description}</p>
                 <button className='service-button'>{button}</button>
             </div>
-
         </div>
     )
 }

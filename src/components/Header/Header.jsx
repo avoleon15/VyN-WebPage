@@ -7,22 +7,20 @@ function Header(){
 
 
     return(
-        <>
-            <section id="header">
-                <Navbar/>
-                <div id='hero-header'>
-                    <div id="hero-header-left">
-                        <h2 id='hero-title'>{text.header.title}</h2>
-                        <p id='hero-paragraph'>{text.header.description}</p>
-                        <div id='hero-buttons'>
-                            <button className='track-button'>{text.header.button1}</button>
-                            <button className='services-button'>{text.header.button2}</button>
-                        </div>
-                    </div>
+    <section id="header">
+        <Navbar/>
+        <div id='hero-header'>
+            <div id="hero-header-left">
+                <h2 id='hero-title'>{text.header.title}</h2>
+                <p id='hero-paragraph'>{text.header.description}</p>
+                <div id='hero-buttons'>
+                    <button className='track-button'>{text.header.button1}</button>
+                    <button className='services-button'>{text.header.button2}</button>
                 </div>
-                
-            </section>
-        </>
+            </div>
+        </div>
+        
+    </section>
     )
 }
 

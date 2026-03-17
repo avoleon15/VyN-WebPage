@@ -3,7 +3,7 @@ export const spanish = {
         "services" : "Servicios",
         "contact" : "Contactanos",
         "about" : "Nosotros",
-        "language" : "English",
+        "language" : "Lenguaje",
         "log" : "Log in"
     },
     "header" : {

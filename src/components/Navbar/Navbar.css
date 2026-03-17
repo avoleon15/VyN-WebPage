@@ -1,15 +1,17 @@
 #navbar{
+    position: relative;
+    z-index: 100;
     display: flex;
     width: 100%;
     height: 60px;
 
     padding: 10px 0px 10px 0px;
 
-    background: rgba(255, 255, 255, 0.071);
+    background: rgba(255, 52, 52, 0.226);
 }
 
 #left-nav{
-    width: 20%;
+    width: 25%;
     height: 100%;
 
     display: flex;
@@ -24,45 +26,83 @@
 }
 
 #center-nav{
-    width: 60%;
+    width: 50%;
 }
 
 .list-nav{
     padding-left: 0px;
     list-style: none;
+    position: relative;
 
     display: flex;
     justify-content: center;
     gap: 5%;
     align-items: center;
+    color: var(--background-secondary);
 }
 
 .list-nav a{
     text-decoration: none;
     font-size: 1rem;
     color: var(--background-secondary);
+    font-weight: 100;
 }
 
 .list-nav a:hover{
+    cursor: pointer;
     text-decoration: underline;
 }
 
-#language-toggle{
-    background: none;
-    border: 1px solid var(--background-secondary);
-    border-radius: 10px;
-    color: var(--background-secondary);
-    padding: 3px 10px;
-    font-size: 1rem;
+.languages-component {
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease, padding 0.3s;
+
+    display: flex;
+    flex-direction: column;
 }
 
-#language-toggle:hover{
-    cursor: pointer;
+.visible-language {
+    max-height: 100px;
+    background: var(--white);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.language-toggle{
+    height: 100%;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    padding: 10px;
+    z-index: 101;
+
+    transition: background 0.3s ease-in;
+}
+
+.language-toggle:hover{
+    background: var(--white-light);
+}
+
+.chevron-language{
+    font-size: 0.8rem;
+    color: var(--white-light);
+    transition: transform 0.3s ease;
+}
+
+.chevron-language.rotated {
+    transform: rotate(180deg);
+}
+
+.bold{
+    font-weight:900;
 }
 
 #right-nav{
-    width: 20%;
-
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +125,7 @@
 }
 
 @media (max-width: 1024px){
-    .list-nav a{
+    .list-nav a, #language-toggle{
         font-size: 0.9rem;
     }
 
@@ -99,7 +139,7 @@
 }
 
 @media (max-width: 768px){
-    .list-nav a{
+    .list-nav a, #language-toggle{
         font-size: 0.8rem;
     }
     #center-nav{
