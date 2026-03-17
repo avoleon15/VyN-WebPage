@@ -1,24 +1,27 @@
 import { faEnvelope, faMapPin, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLanguage } from '../../context/LanguageContext.jsx';
 import Forms from '../Forms/Forms.jsx';
 import './Contact.css';
 
 function Contact(){
+    const { text } = useLanguage()
+
     return(
         <div id='contact'>
             <div id='contact-container'>
                 <div className='contact-info'>
-                    <h3 className='contact-title'>¿Listo para mover tu carga?</h3>
-                    <p className='contact-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laudantium nam vel minus odio, mollitia voluptatibus sequi </p>
+                    <h3 className='contact-title'>{text.contact.title}</h3>
+                    <p className='contact-description'>{text.contact.description}</p>
                     <div id='contact-section'>
                     <div className='contact-sections'>
-                        <FontAwesomeIcon icon={faMapPin} />    Guatemala, Guatemala
+                        <FontAwesomeIcon icon={faMapPin} />{text.contact.location}
                     </div>
                     <div className='contact-sections'>
-                        <FontAwesomeIcon icon={faPhone} />   (+502) 1234 5678
+                        <FontAwesomeIcon icon={faPhone} />{text.contact.phone}
                     </div>
                     <div className='contact-sections'>
-                        <FontAwesomeIcon icon={faEnvelope} />   vyn@gmail.com
+                        <FontAwesomeIcon icon={faEnvelope} />{text.contact.mail}
                     </div>
                     </div>
                 </div>
