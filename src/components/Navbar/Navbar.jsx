@@ -15,6 +15,14 @@ function Navbar(){
         <nav id="navbar">
             <div id="left-nav">
                 <img src={vynLogo} alt='vyn logo'></img>
+                <button className='hamburger-menu' onClick={() => setMenuOpen(!menuOpen)}>
+                    <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
+                </button>
+                <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+                    <p className='hamburger-title'>{text.navbar.language}</p>
+                    <button className={`hamburger-option ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setEnglish(); }}>English</button>
+                    <button className={`hamburger-option ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setSpanish(); }}>Español</button>
+                </div>
             </div>
             <div id="center-nav">
                 <ul className='list-nav'>
@@ -26,22 +34,14 @@ function Navbar(){
                             {text.navbar.language} <FontAwesomeIcon className={`chevron-language ${open ? 'rotated' : ''}`} icon={faChevronDown} />
                         </a>
                         <div className={`languages-component ${open ? 'visible-language' : ''}`}>
-                            <button className={`language-toggle ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={setEnglish}>English</button>
-                            <button className={`language-toggle ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={setSpanish}>Español</button>
+                            <button className={`language-toggle ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={() => { setOpen(!open); setEnglish(); }}>English</button>
+                            <button className={`language-toggle ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={() => { setOpen(!open); setSpanish(); }}>Español</button>
                         </div>
                     </li>
                 </ul>
             </div>
             <div id="right-nav">
                 <button id='login-nav'><FontAwesomeIcon icon={faCircleUser} /> {text.navbar.log}</button>
-                <button className='hamburger-menu' onClick={() => setMenuOpen(!menuOpen)}>
-                    <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
-                </button>
-                <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-                    <p className='hamburger-title'>{text.navbar.language}</p>
-                    <button className={`hamburger-option ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setEnglish(); }}>English</button>
-                    <button className={`hamburger-option ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setSpanish(); }}>Español</button>
-                </div>
             </div>
         </nav>
     )
