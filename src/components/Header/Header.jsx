@@ -1,5 +1,4 @@
 import { useLanguage } from '../../context/LanguageContext.jsx';
-import Navbar from '../Navbar/Navbar.jsx';
 import './Header.css';
 
 function Header(){
@@ -8,7 +7,6 @@ function Header(){
 
     return(
     <section id="header">
-        <Navbar/>
         <div id='hero-header'>
             <div id="hero-header-left">
                 <h2 id='hero-title'>{text.header.title}</h2>

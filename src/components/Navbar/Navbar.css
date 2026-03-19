@@ -7,7 +7,7 @@
 
     padding: 10px 0px 10px 0px;
 
-    background: rgba(255, 52, 52, 0.352);
+    background: white;
 }
 
 #left-nav{
@@ -44,7 +44,7 @@
 .list-nav a{
     text-decoration: none;
     font-size: 1rem;
-    color: var(--background-secondary);
+    color: var(--text);
     font-weight: 100;
 }
 
@@ -90,7 +90,7 @@
 
 .chevron-language{
     font-size: 0.8rem;
-    color: var(--white-light);
+    color: var(--text);
     transition: transform 0.3s ease;
 }
 
@@ -113,16 +113,62 @@
     background: none;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
-    background: var(--background-secondary);
-    border: none;
+    border: 1px solid black;
+    background: none;
     transition: all 0.7s;
     color: none;
 }
 
 #login-nav:hover{
-    border: 1px solid var(--white);
-    background: var(--white);
+    background: var(--text);
+    color: var(--white);
     cursor: pointer;
+}
+
+.hamburger-menu{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 1.7rem;
+    margin-right: 10%;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 60px; right: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--background-secondary);
+    transition: right 0.3s ease;
+    border-top: 1px solid var(--text);
+
+    display: none;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.mobile-menu p, .mobile-menu button{
+    border: none;
+    background: none;
+    text-align: start;
+    text-decoration: none;
+    border: 1px solid var(--white-light);
+    margin: 0px;
+}
+
+.hamburger-title{
+    color: var(--text);
+    font-size: 1rem;
+    padding: 10px 10px 10px 20px;
+}
+
+.hamburger-option{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    padding: 10px 10px 10px 30px;
 }
 
 @media (max-width: 1024px){
@@ -156,14 +202,29 @@
 }
 
 @media (max-width: 430px){
-
+    #navbar{
+        height: 40px;
+        position: fixed;
+    }
     #left-nav{
-        width: 30%;
+        width: 50%;
+        justify-content: flex-start;
     }
     #center-nav{
         display: none;
     }
-    #right-nav{
+    #login-nav{
         display: none;
+    }
+    #right-nav{
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,6 +1,6 @@
 #header{
     width: 100%;
-    height: 840px;
+    height: 780px;
     position: relative;
 
     display: flex;
@@ -37,13 +37,13 @@
     justify-content: flex-start;
     align-items: self-start;
     height: 100%;
-    margin: 5px 0px 5px 10%;
+    margin: 90px 0px 5px 10%;
     width: 60%;
 }
 
 #hero-title{
     font-size: 4rem;
-    margin: 70px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     color: var(--white);
 }
 
@@ -112,7 +112,7 @@ nav {
 
 @media (max-width: 768px){
     #header{
-        height: 780px;
+        height: 720px;
     }
     #hero-header-left{
         width: 70%;
@@ -141,10 +141,12 @@ nav {
 
 @media (max-width: 430px){
     #header{
-        height: 700px;
+        height: 640px;
     }
     #hero-header-left{
-        width: 90%;
+        width: 100%;
+        margin: 0;
+        padding: 40% 5% 0% 5%;
     }
     #hero-title{
         font-size: 2.5rem;
