@@ -1,4 +1,4 @@
-import { faChevronDown, faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faChevronDown, faCircleUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import vynLogo from "../../assets/images/VyN-logo.png";
@@ -9,6 +9,7 @@ import './Navbar.css';
 function Navbar(){
     const { text, setSpanish, setEnglish } = useLanguage()
     const [open, setOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
 
     return(
         <nav id="navbar">
@@ -33,6 +34,14 @@ function Navbar(){
             </div>
             <div id="right-nav">
                 <button id='login-nav'><FontAwesomeIcon icon={faCircleUser} /> {text.navbar.log}</button>
+                <button className='hamburger-menu' onClick={() => setMenuOpen(!menuOpen)}>
+                    <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
+                </button>
+                <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+                    <p className='hamburger-title'>{text.navbar.language}</p>
+                    <button className={`hamburger-option ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setEnglish(); }}>English</button>
+                    <button className={`hamburger-option ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setSpanish(); }}>Español</button>
+                </div>
             </div>
         </nav>
     )
