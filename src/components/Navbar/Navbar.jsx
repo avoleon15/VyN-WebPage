@@ -1,6 +1,7 @@
 import { faBars, faChevronDown, faCircleUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import vynLogo from "../../assets/images/VyN-logo.png";
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import './Navbar.css';
@@ -26,9 +27,10 @@ function Navbar(){
             </div>
             <div id="center-nav">
                 <ul className='list-nav'>
+                    <li><Link to='/'>{text.navbar.home}</Link></li>
                     <li><a href="#mainService">{text.navbar.services}</a></li>
-                    <li><a href="#contact">{text.navbar.contact}</a></li>
-                    <li><a>{text.navbar.about}</a></li>
+                    <li id='contact-nav'><a href="#contact">{text.navbar.contact}</a></li>
+                    <li><Link to='/about'>{text.navbar.about}</Link></li>
                     <li>
                         <a className={`language-text ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
                             {text.navbar.language} <FontAwesomeIcon className={`chevron-language ${open ? 'rotated' : ''}`} icon={faChevronDown} />
@@ -41,7 +43,7 @@ function Navbar(){
                 </ul>
             </div>
             <div id="right-nav">
-                <button id='login-nav'><FontAwesomeIcon icon={faCircleUser} /> {text.navbar.log}</button>
+                <button id='login-nav'><FontAwesomeIcon id='login-icon' icon={faCircleUser} /> {text.navbar.log}</button>
             </div>
         </nav>
     )

@@ -199,6 +199,18 @@
     }
 }
 
+@media (max-width: 600px){
+    #contact-nav{
+        display: none;
+    }
+    #login-icon{
+        display: none;
+    }
+    #login-nav{
+        font-size: 0.7rem;
+    }
+}
+
 @media (max-width: 430px){
     #navbar{
         height: 40px;
