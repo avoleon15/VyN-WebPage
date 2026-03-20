@@ -11,6 +11,7 @@ function Navbar(){
     const { text, setSpanish, setEnglish } = useLanguage()
     const [open, setOpen] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
+    const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
 
     return(
         <nav id="navbar">
@@ -20,9 +21,13 @@ function Navbar(){
                     <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
                 </button>
                 <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-                    <p className='hamburger-title'>{text.navbar.language}</p>
-                    <button className={`hamburger-option ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setEnglish(); }}>English</button>
-                    <button className={`hamburger-option ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={() => { setMenuOpen(!menuOpen); setSpanish(); }}>Español</button>
+                    <button className='hamburger-option' onClick={() => setMenuOpen(!menuOpen)}><Link to='/'>{text.navbar.home}</Link></button>
+                    <button className='hamburger-option' onClick={() => setMenuOpen(!menuOpen)}><Link to='/about'>{text.navbar.about}</Link></button>
+                    <button className='hamburger-option' onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)}>{text.navbar.language} <FontAwesomeIcon className={`chevron-language ${hamburgerMenuOpen ? 'rotated' : ''}`} icon={faChevronDown} /></button>
+                    <div className={`language-mobile ${hamburgerMenuOpen ? 'open' : ''}`}>
+                        <button className={`hamburger-option ${text.navbar.language === "Language" ? "bold" : "" }`} onClick={() => { setHamburgerMenuOpen(!hamburgerMenuOpen); setMenuOpen(!menuOpen); setEnglish(); }}>English</button>
+                        <button className={`hamburger-option ${text.navbar.language === "Lenguaje" ? "bold" : "" }`} onClick={() => { setHamburgerMenuOpen(!hamburgerMenuOpen); setMenuOpen(!menuOpen); setSpanish(); }}>Español</button>
+                    </div>
                 </div>
             </div>
             <div id="center-nav">
