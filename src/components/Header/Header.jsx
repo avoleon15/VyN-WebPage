@@ -12,8 +12,8 @@ function Header(){
                 <h2 id='hero-title'>{text.header.title}</h2>
                 <p id='hero-paragraph'>{text.header.description}</p>
                 <div id='hero-buttons'>
-                    <button className='track-button'>{text.header.button1}</button>
-                    <button className='services-button'>{text.header.button2}</button>
+                    <a className='track-button'>{text.header.button1}</a>
+                    <a href='#transports' className='services-button'>{text.header.button2}</a>
                 </div>
             </div>
         </div>

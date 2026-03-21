@@ -1,5 +1,6 @@
 export const english = {
     "navbar" : {
+        "home" : "Home",
         "services" : "Services",
         "contact" : "Contact Us",
         "about" : "About Us",

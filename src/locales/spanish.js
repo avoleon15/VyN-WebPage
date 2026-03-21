@@ -1,5 +1,6 @@
 export const spanish = {
     "navbar" : {
+        "home" : "Inicio",
         "services" : "Servicios",
         "contact" : "Contactanos",
         "about" : "Nosotros",
