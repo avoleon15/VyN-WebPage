@@ -32,6 +32,8 @@ function Navbar(){
                 </button>
                 <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                     <button className='hamburger-option' onClick={() => setMenuOpen(!menuOpen)}><Link to='/'>{text.navbar.home}</Link></button>
+                    <button className='hamburger-option' onClick={() => { goToSection('mainService'); setMenuOpen(!menuOpen)}}>{text.navbar.services}</button>
+                    <button className='hamburger-option' onClick={() => { goToSection('contact'); setMenuOpen(!menuOpen)}}>{text.navbar.contact}</button>
                     <button className='hamburger-option' onClick={() => setMenuOpen(!menuOpen)}><Link to='/about'>{text.navbar.about}</Link></button>
                     <button className='hamburger-option' onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)}>{text.navbar.language} <FontAwesomeIcon className={`chevron-language ${hamburgerMenuOpen ? 'rotated' : ''}`} icon={faChevronDown} /></button>
                     <div className={`language-mobile ${hamburgerMenuOpen ? 'open' : ''}`}>
@@ -43,8 +45,8 @@ function Navbar(){
             <div id="center-nav">
                 <ul className='list-nav'>
                     <li><Link to='/'>{text.navbar.home}</Link></li>
-                    <li><button onClick={() => goToSection('mainService')}>{text.navbar.services}</button></li>
-                    <li id='contact-nav'><button onClick={() => goToSection('contact')}>{text.navbar.contact}</button></li>
+                    <li><button className='nav-button' onClick={() => goToSection('mainService')}>{text.navbar.services}</button></li>
+                    <li id='contact-nav'><button className='nav-button' onClick={() => goToSection('contact')}>{text.navbar.contact}</button></li>
                     <li><Link to='/about'>{text.navbar.about}</Link></li>
                     <li>
                         <a className={`language-text ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>

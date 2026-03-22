@@ -1,5 +1,5 @@
 #navbar{
-    position: relative;
+    position: fixed;
     z-index: 100;
     display: flex;
     width: 100%;
@@ -41,7 +41,7 @@
     color: var(--background-secondary);
 }
 
-.list-nav a, .list-nav button{
+.list-nav a, .nav-button{
     text-decoration: none;
     font-size: 1rem;
     color: var(--text);
@@ -50,7 +50,7 @@
     border: none;
 }
 
-.list-nav a:hover, .list-nav button:hover{
+.list-nav a:hover, .nav-button:hover{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -182,7 +182,7 @@
 
 
 @media (max-width: 1024px){
-    .list-nav a, .language-toggle{
+    .list-nav a, .language-toggle, .nav-button{
         font-size: 0.9rem;
     }
 
@@ -196,7 +196,7 @@
 }
 
 @media (max-width: 768px){
-    .list-nav a, .language-toggle{
+    .list-nav a, .language-toggle, .nav-button{
         font-size: 0.8rem;
     }
     #center-nav{
@@ -226,7 +226,6 @@
 @media (max-width: 430px){
     #navbar{
         height: 40px;
-        position: fixed;
     }
     #left-nav{
         width: 100%;
