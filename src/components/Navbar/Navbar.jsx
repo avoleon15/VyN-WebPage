@@ -1,9 +1,10 @@
 import { faBars, faChevronDown, faCircleUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import vynLogo from "../../assets/images/VyN-logo.png";
 import { useLanguage } from '../../context/LanguageContext.jsx';
+
 import './Navbar.css';
 
 
@@ -12,6 +13,15 @@ function Navbar(){
     const [open, setOpen] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
     const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
+
+    const navigate = useNavigate()
+
+    const goToSection = (id) => {
+        navigate('/')
+        setTimeout(() => {
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+    }
 
     return(
         <nav id="navbar">
@@ -33,8 +43,8 @@ function Navbar(){
             <div id="center-nav">
                 <ul className='list-nav'>
                     <li><Link to='/'>{text.navbar.home}</Link></li>
-                    <li><a href="#mainService">{text.navbar.services}</a></li>
-                    <li id='contact-nav'><a href="#contact">{text.navbar.contact}</a></li>
+                    <li><button onClick={() => goToSection('mainService')}>{text.navbar.services}</button></li>
+                    <li id='contact-nav'><button onClick={() => goToSection('contact')}>{text.navbar.contact}</button></li>
                     <li><Link to='/about'>{text.navbar.about}</Link></li>
                     <li>
                         <a className={`language-text ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>

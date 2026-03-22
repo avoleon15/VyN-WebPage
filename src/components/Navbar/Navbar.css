@@ -41,14 +41,16 @@
     color: var(--background-secondary);
 }
 
-.list-nav a{
+.list-nav a, .list-nav button{
     text-decoration: none;
     font-size: 1rem;
     color: var(--text);
     font-weight: 100;
+    background: none;
+    border: none;
 }
 
-.list-nav a:hover{
+.list-nav a:hover, .list-nav button:hover{
     cursor: pointer;
     text-decoration: underline;
 }
