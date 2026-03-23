@@ -15,38 +15,38 @@ function MainServices(){
             <div id='service-container'>
             <ServiceComponent
                 icon={faShip}
-                title={text.services.seafreight.title}
-                description={text.services.seafreight.description}
-                button={text.services.seafreight.button}
+                title={text.services.service1.title}
+                description={text.services.service1.description}
+                button={text.services.service1.button}
             />
 
             <ServiceComponent
                 icon={faPlane}
-                title={text.services.airfreight.title}
-                description={text.services.airfreight.description}
-                button={text.services.airfreight.button}
+                title={text.services.service2.title}
+                description={text.services.service2.description}
+                button={text.services.service2.button}
             />
 
             <ServiceComponent
                 icon={faTruck}
-                title={text.services.overland.title}
-                description={text.services.overland.description}
-                button={text.services.overland.button}
+                title={text.services.service3.title}
+                description={text.services.service3.description}
+                button={text.services.service3.button}
 
             />
 
             <ServiceComponent
                 icon={faBoxOpen}
-                title={text.services.special.title}
-                description={text.services.special.description}
-                button={text.services.special.button}
+                title={text.services.service4.title}
+                description={text.services.service4.description}
+                button={text.services.service4.button}
             />
 
             <ServiceComponent
                 icon={faShield}
-                title={text.services.secure.title}
-                description={text.services.secure.description}
-                button={text.services.secure.button}
+                title={text.services.service5.title}
+                description={text.services.service5.description}
+                button={text.services.service5.button}
             />
             </div>
         </section>

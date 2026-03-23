@@ -35,27 +35,27 @@ export const english = {
     "services" : {
         "title" : "Services",
         "description" : "Comprehensive logistics solutions designed to connect your business with the world in an agile, safe and efficient way.",
-        "seafreight" : {
-            "title" : "Sea Freight",
+        "service1" : {
+            "title" : "Customs management",
             "description" : "We connect your cargo with the world through the main international shipping lines with guaranteed speed and safety.",
             "button" : "See more"
         },
-        "airfreight" : {
-            "title" : "Air Freight",
+        "service2" : {
+            "title" : "Cargo coordination",
             "description" : "Efficient air solutions with access to the main airlines and airports at an international level.",
             "button" : "See more"
         },
-        "overland" : {
-            "title" : "Overland",
+        "service3" : {
+            "title" : "Special Cargo",
             "description" : "Complete ground coverage to move your merchandise quickly and safely across the territory.",
             "button" : "See more"
         },
-        "special" : {
-            "title" : "Special Cargo",
+        "service4" : {
+            "title" : "Logistics consulting",
             "description" : "Specialized handling of oversized and out-of-gauge cargo projects with highly qualified equipment and personnel.",
             "button" : "See more"
         },
-        "secure" : {
+        "service5" : {
             "title" : "Transport Insurance",
             "description" : "We protect your merchandise with comprehensive coverage throughout the entire journey so it always arrives safely.",
             "button" : "See more"
@@ -88,6 +88,22 @@ export const english = {
         "button" : "Send"
     },
     "footer" : {
+        "transports" : {
+            "title" : "Transports",
+            "seafreight" : "Seafreight",
+            "airfreight" : "Airfreight",
+            "overland" : "Overland"
+        },
+        "importantLinks" : {
+            "title" : "Other Links",
+            "services" : "Services",
+            "about" : "About Us",
+            "home" : "Home"
+        },
+        "contact" : {
+            "title" : "Contact",
+            "message" : "Get in touch"
+        },
         "credits" : "© 2026 VYN Logistics. All rights reserved."
     }
 }
