@@ -35,27 +35,27 @@ export const spanish = {
     "services" : {
         "title" : "Servicios",
         "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis",
-        "seafreight" : {
-            "title" : "Maritimo",
+        "service1" : {
+            "title" : "Gestión aduanal",
             "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis",
             "button" : "ver mas"
         },
-        "airfreight" : {
-            "title" : "aereo",
+        "service2" : {
+            "title" : "Coordinación de carga",
             "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis",
             "button" : "ver mas"
         },
-        "overland" : {
-            "title" : "terrestre",
+        "service3" : {
+            "title" : "Cargas especiales",
             "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis",
             "button" : "ver mas"
         },
-        "special" : {
-            "title" : "Cargas Especiales",
+        "service4" : {
+            "title" : "Asesoría logística",
             "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis",
             "button" : "ver mas"
         },
-        "secure" : {
+        "service5" : {
             "title" : "Seguros de Transporte",
             "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio, nostrum explicabo repudiandae in ullam tempora non autem consequatur labore! Tempora iusto illum commodi incidunt. Neque officia fugit asperiores veritatis",
             "button" : "ver mas"
@@ -88,6 +88,22 @@ export const spanish = {
     "button" : "Enviar"
     },
     "footer" : {
+        "transports" : {
+            "title" : "Transportes",
+            "seafreight" : "Marítimo",
+            "airfreight" : "Aéreo",
+            "overland" : "Terrestre"
+        },
+        "importantLinks" : {
+            "title" : "Otros Enlances",
+            "services" : "Servicios",
+            "about" : "Sobre Nosotros",
+            "home" : "Inicio"
+        },
+        "contact" : {
+            "title" : "Contáctanos",
+            "message" : "Mandanos un mensaje"
+        },
         "credits" : "© 2026 VYN Logistics. Todos los derechos reservados."
     }
 

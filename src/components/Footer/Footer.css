@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: self-start;
 
     margin: 60px 0px 30px 0px;
     background: var(--background);
@@ -32,9 +32,12 @@
     font-size: 1.1rem;
 }
 
-.footer-list a{
+.footer-list button, .footer-list a{
     color: var(--text-light);
     font-size: 1rem;
+    border: none;
+    background: none;
+    text-decoration: none;
 }
 
 .footer-credits{
@@ -52,7 +55,7 @@
         font-size: 1rem;
     }
 
-    .footer-list a{
+    .footer-list button{
         color: var(--text-light);
         font-size: 0.9rem;
     }
@@ -85,7 +88,7 @@
         font-size: 0.8rem;
     }
 
-    .footer-list a{
+    .footer-list button{
         color: var(--text-light);
         font-size: 0.8rem;
     }
