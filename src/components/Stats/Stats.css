@@ -1,0 +1,46 @@
+#stats{
+    background: var(--background-alternative);
+    padding: 5%;
+    text-align: center;
+}
+
+.stats-component{
+    display: flex;
+    gap: 2%;
+}
+
+.stats-title{
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.stats-description{
+    font-size: 1.1rem;
+    color: var(--clear);
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1024px){
+    .stats-title{
+        font-size: 3rem;
+    }
+    .stats-description{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    .stats-component{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 430px){
+    .stats-title{
+        font-size: 2.5rem;
+    }
+    .stats-description{
+        font-size: 0.8rem;
+    }
+}
