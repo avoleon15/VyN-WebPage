@@ -88,6 +88,25 @@ export const english = {
             "description" : "On-time deliveries"
         }
     },
+    "howItWorks": {
+        "title": "How It Works",
+        "description": "We simplify your logistics process from start to finish. Our streamlined system ensures fast, secure, and reliable delivery for every shipment.",
+        "step1": {
+            "number": "01",
+            "title": "Request a Quote",
+            "description": "Submit your shipment details through our platform and receive a customized quote tailored to your needs."
+        },
+        "step2": {
+            "number": "02",
+            "title": "We Handle the Logistics",
+            "description": "Our team coordinates pickup, transportation, and tracking, ensuring your cargo is handled with care and efficiency."
+        },
+        "step3": {
+            "number": "03",
+            "title": "Delivery & Confirmation",
+            "description": "Your shipment arrives safely at its destination, and you receive real-time confirmation once the delivery is completed."
+        }
+    },
     "forms" : {
         "name" : {
             "title" : "Name",

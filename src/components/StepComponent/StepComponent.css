@@ -1,0 +1,102 @@
+.step{
+    width: 400px;
+}
+
+.step-box{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.step-box h3{
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.step-box h4{
+    font-size: 1.3rem;
+}
+
+.step-circle{
+    background: var(--primary);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step p{
+    font-size: 1rem;
+    color: var(--text);
+}
+
+@media (max-width: 1024px){
+    .step-box{
+        gap: 10px;
+        padding: 0px 15px;
+    }
+    .step-box h3{
+        font-size: 1.3rem;
+    }
+    .step-box h4{
+        font-size: 1rem;
+    }
+    .step p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    .step{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        border: 2px solid var(--white);
+        border-radius: 15px;
+    }
+    .step-box{
+        flex-direction: row;
+        width: 50%;
+        height: 130px;
+    }
+    .step-circle{
+        width: 43px;
+        height: 43px;
+    }
+    .step-box h3{
+        font-size: 1.2rem;
+    }
+    .step-box h4{
+        font-size: 1rem;
+    }
+    .step p{
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 430px){
+    .step-box{
+        padding: 0px 0px 0px 10px;
+    }
+    .step-box h3{
+        font-size: 0.9rem;
+    }
+    .step-box h4{
+        font-size: 0.9rem;
+    }
+    .step-circle{
+        width: 35px;
+        height: 35px;
+    }
+    .step p{
+        font-size: 0.8rem;
+    }
+}

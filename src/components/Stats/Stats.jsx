@@ -14,7 +14,6 @@ function Stats(){
             <div className='stats-component'>
                 <StatsComponent
                 stat={text.stats.stat1.stat}
-                symbol="+"
                 description={text.stats.stat1.description}
                 />
                 <StatsComponent

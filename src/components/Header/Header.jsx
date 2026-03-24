@@ -1,9 +1,17 @@
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import './Header.css';
 
 function Header(){
     const { text } = useLanguage()
+    const navigate = useNavigate()
 
+    const goToSection = (id) => {
+        navigate('/')
+        setTimeout(() => {
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+    }
 
     return(
     <section id="header">
@@ -12,8 +20,8 @@ function Header(){
                 <h2 id='hero-title'>{text.header.title}</h2>
                 <p id='hero-paragraph'>{text.header.description}</p>
                 <div id='hero-buttons'>
-                    <a className='track-button'>{text.header.button1}</a>
-                    <a href='#transports' className='services-button'>{text.header.button2}</a>
+                    <button className='track-button'>{text.header.button1}</button>
+                    <button className='services-button' onClick={() => goToSection('transports')}>{text.header.button2}</button>
                 </div>
             </div>
         </div>
