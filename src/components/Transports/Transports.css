@@ -23,6 +23,7 @@
 #transports-container{
     display: flex;
     justify-content: space-evenly;
+
 }
 
 @media (max-width: 1024px){

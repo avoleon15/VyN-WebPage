@@ -68,6 +68,26 @@ export const english = {
         "phone" : "(+502) 1234 5678",
         "mail" : "vyn@gmail.com"
     },
+    "stats" : {
+        "title" : "Our Track Record",
+        "description" : "Over 15 years connecting Guatemalan businesses with the world.",
+        "stat1" : {
+            "stat" : "15",
+            "description" : "Years of experience"
+        },
+        "stat2" : {
+            "stat" : "500",
+            "description" : "Satisfied clients"
+        },
+        "stat3" : {
+            "stat" : "50",
+            "description" : "Connected countries"
+        },
+        "stat4" : {
+            "stat" : "98",
+            "description" : "On-time deliveries"
+        }
+    },
     "forms" : {
         "name" : {
             "title" : "Name",

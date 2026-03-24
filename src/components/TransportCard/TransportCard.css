@@ -9,6 +9,7 @@
     border-radius: 10px;
     border-left: 4px solid var(--background-secondary);
     box-shadow: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
     transition: all 1s;
 }

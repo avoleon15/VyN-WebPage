@@ -68,6 +68,26 @@ export const spanish = {
         "phone" : "(+502) 1234 5678",
         "mail" : "vyn@gmail.com"
     },
+    "stats" : {
+        "title" : "Nuestra Trayectoria",
+        "description" : "Más de 15 años conectando empresas guatemaltecas con el mundo.",
+        "stat1" : {
+            "stat" : "15",
+            "description" : "Años de experiencia"
+        },
+        "stat2" : {
+            "stat" : "500",
+            "description" : "Clientes satisfechos"
+        },
+        "stat3" : {
+            "stat" : "50",
+            "description" : "Países conectados"
+        },
+        "stat4" : {
+            "stat" : "98",
+            "description" : "Entregas a tiempo"
+        }
+    },
     "forms" : {
         "name" : {
             "title" : "Nombre",

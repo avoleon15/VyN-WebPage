@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Lato:wght@400;700&display=swap');
+
+body, textarea, input {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, label{
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --primary: #a61c1c;
+    --secondary: #d97d7d;
+    --accent: #d02525;
+    --background: #ebebeb;
+    --background-secondary: #dcdcdc;
+    --background-alternative: #8B0000;
+    --text: #000000;
+    --text-light:rgb(78, 78, 78);
+    --white: #ffffff;
+    --clear: #dddddd;
+    --white-light:#c6c6c6e3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--background);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.whatsapp-button{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
