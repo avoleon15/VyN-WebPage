@@ -1,0 +1,100 @@
+#howItWorks{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px;
+    position: relative;
+    background: var(--background);
+    z-index: 1;
+}
+
+#howItWorks::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/parking-lot.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+#how-box1 h2{
+    font-size: 3.5rem;
+    margin: 20px 20px;
+    text-align: center;
+    width: 40%;
+}
+
+#how-box1 p{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.how-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--white);
+    margin-bottom: 50px;
+}
+
+#how-box2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 80px 0px;
+}
+
+@media (max-width: 1024px){
+    #how-box1 h2{
+        font-size: 3rem;
+    }
+    #how-box1 p{
+        font-size: 0.9rem;
+    }
+    #how-box2{
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    #howItWorks{
+        padding: 50px 5%;
+    }
+    .how-info{
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    #how-box1 h2{
+        font-size: 2.5rem;
+        width: 100%;
+        margin: 0;
+    }
+    #how-box1 p{
+        width: 100%;
+    }
+    #how-box2{
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+
+}
+
+@media (max-width: 430px){
+    #how-box1 h2{
+        font-size: 2rem;
+    }
+    #how-box1 p{
+        font-size: 0.8rem;
+    }
+}

@@ -88,6 +88,25 @@ export const spanish = {
             "description" : "Entregas a tiempo"
         }
     },
+    "howItWorks": {
+        "title": "Cómo Funciona",
+        "description": "Simplificamos tu proceso logístico de principio a fin. Nuestro sistema garantiza entregas rápidas, seguras y confiables para cada envío.",
+        "step1": {
+            "number": "01",
+            "title": "Solicita una Cotización",
+            "description": "Ingresa los detalles de tu envío en nuestra plataforma y recibe una cotización personalizada según tus necesidades."
+        },
+        "step2": {
+            "number": "02",
+            "title": "Gestionamos la Logística",
+            "description": "Nuestro equipo coordina la recolección, transporte y monitoreo, asegurando que tu carga sea manejada con eficiencia y cuidado."
+        },
+        "step3": {
+            "number": "03",
+            "title": "Entrega y Confirmación",
+            "description": "Tu envío llega de forma segura a su destino y recibes una confirmación en tiempo real al completarse la entrega."
+        }
+    },
     "forms" : {
         "name" : {
             "title" : "Nombre",
