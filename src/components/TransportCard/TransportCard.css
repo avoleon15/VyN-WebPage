@@ -48,6 +48,7 @@
 
 .transport-description{
     font-size: 1rem;
+    line-height: 30px;
     color: var(--text-light);
 }
 

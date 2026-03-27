@@ -26,6 +26,7 @@
 .contact-description{
     font-size: 1rem;
     color: var(--white-light);
+    line-height: 30px;
 }
 
 #contact-section{

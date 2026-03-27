@@ -18,6 +18,7 @@
 #transports-description{
     font-size: 1rem;
     color: var(--white-light);
+    line-height: 30px;
 }
 
 #transports-container{
@@ -29,6 +30,7 @@
 @media (max-width: 1024px){
     #transport-title{
         font-size: 4rem;
+        margin: 50px 60px;
     }
     #transports-description{
         font-size: 0.9rem;
@@ -41,7 +43,7 @@
         padding: 20px 0px 40px 0px;
     }
     #transport-title{
-        margin: 40px 0px 20px 0px;
+        margin: 50px 0px 20px 0px;
     }
     #transports-container{
         flex-direction: column;

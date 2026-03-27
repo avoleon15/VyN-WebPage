@@ -51,6 +51,7 @@
     font-size: 1.3rem;
     margin: 0px 20% 5% 0px;
     color: var(--white-light);
+    line-height: 30px;
 }
 
 #hero-buttons{

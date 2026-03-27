@@ -19,6 +19,7 @@
     font-size: 1.1rem;
     color: var(--clear);
     margin-bottom: 60px;
+    line-height: 30px;
 }
 
 @media (max-width: 1024px){
