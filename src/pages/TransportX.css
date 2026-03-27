@@ -1,0 +1,73 @@
+.transportX-header{
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    background: rgb(3, 45, 82);
+}
+
+.transportX-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/SeafreightBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.transportX-header-box{
+    margin: 20%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    background: var(--background);
+}
+
+.transportX-header-box h1{
+    font-size: 5rem;
+    color: var(--text);
+    margin: 0;
+}
+
+.transportX-header-box p{
+    color: var(--white-light);
+    font-size: 2rem;
+    margin: 0;
+
+}
+
+.divided-container{
+    display: flex;
+}
+
+.inverted-container{
+    flex-direction: row-reverse;
+}
+
+.divided-container div{
+    width: 50%;
+}
+
+.divided-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.divided-container p{
+    font-size: 1.1rem;
+    padding: 20px;
+    line-height: 30px;
+}
