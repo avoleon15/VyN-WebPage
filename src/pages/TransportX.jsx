@@ -1,4 +1,5 @@
 import { faShip } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
 import seafreight from "../assets/images/seafreight.jpg";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar.jsx";
@@ -6,6 +7,12 @@ import TransportXService from "../components/TransportXService/TransportXService
 import './TransportX.css';
 
 function TransportX(){
+
+    const { transportName } = useParams()
+    //const transport = transportsData[transportName]
+
+    //if (!transport) return <p>Transporte no encontrado</p>
+
     return(
         <section id='transportX'>
             <Navbar/>

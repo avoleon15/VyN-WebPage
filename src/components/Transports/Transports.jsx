@@ -20,18 +20,21 @@ function Transports(){
             title={text.transports.seafreight.title}
             description={text.transports.seafreight.description}
             button={text.transports.seafreight.button}
+            link={text.transports.seafreight.link}
             />
             <TransportCard
             image={airfreight}
             title={text.transports.airfreight.title}
             description={text.transports.airfreight.description}
             button={text.transports.airfreight.button}
+            link={text.transports.airfreight.link}
             />
             <TransportCard
             image={overland}
             title={text.transports.overland.title}
             description={text.transports.overland.description}
             button={text.transports.overland.button}
+            link={text.transports.overland.link}
             />
             </div>
         </section>

@@ -19,17 +19,20 @@ export const spanish = {
         "seafreight" : {
             "title" : "Maritimo",
             "description" : "Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil.",
-            "button" : "ver mas"
+            "button" : "ver mas",
+            "link" : "Seafreight"
         },
         "airfreight" : {
             "title" : "Aereo",
             "description" : "Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil.",
-            "button" : "ver mas"
+            "button" : "ver mas",
+            "link" : "Airfreight"
         },
         "overland" : {
             "title" : "Terrestre",
             "description" : "Tu carga, nuestra responsabilidad. Cobertura terrestre completa y ágil.",
-            "button" : "ver mas"
+            "button" : "ver mas",
+            "link" : "Overland"
         }
     },
     "services" : {

@@ -61,6 +61,8 @@
     color: var(--text);
 
     transition: all 0.7s;
+    text-decoration: none;
+    text-align: center;
 }
 
 .transport-button:hover{

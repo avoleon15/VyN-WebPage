@@ -19,17 +19,20 @@ export const english = {
         "seafreight" : {
             "title" : "Sea Freight",
             "description" : "Your cargo, our responsibility. Efficient maritime solutions with access to the world's major ports.",
-            "button" : "See more"
+            "button" : "See more",
+            "link" : "Seafreight"
         },
         "airfreight" : {
             "title" : "Air Freight",
             "description" : "Your cargo, our responsibility. We connect your business to the world by air, fast and secure.",
-            "button" : "See more"
+            "button" : "See more",
+            "link" : "Airfreight"
         },
         "overland" : {
             "title" : "Overland",
             "description" : "Your cargo, our responsibility. Complete and agile ground coverage to move your merchandise on time.",
-            "button" : "See more"
+            "button" : "See more",
+            "link" : "Overland"
         }
     },
     "services" : {
@@ -145,4 +148,5 @@ export const english = {
         },
         "credits" : "© 2026 VYN Logistics. All rights reserved."
     }
+    
 }
