@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import './TransportCard.css';
 
 function TransportCard(props){
 
-    const {image, title, description, button} = props;
+    const {image, title, description, button, link} = props;
     const imageAlt = image + " image"
 
     return(
@@ -13,7 +14,7 @@ function TransportCard(props){
             <div className='transport-info-container'>
                 <h4 className='transport-title'>{title}</h4>
                 <p className='transport-description'>{description}</p>
-                <button className='transport-button'>{button}</button>
+                <Link to={`/transport/${link}`} className='transport-button'>{button}</Link>
             </div>
         </div>
     )
