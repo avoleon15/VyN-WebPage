@@ -1,5 +1,6 @@
 #navbar{
     position: fixed;
+    top: 36px;
     z-index: 100;
     display: flex;
     width: 100%;
@@ -8,6 +9,11 @@
     padding: 10px 0px 10px 0px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     background: white;
+    transition: top 0.3s ease;
+}
+
+#navbar.top-hidden {
+    top: 0;
 }
 
 #left-nav{
@@ -49,11 +55,13 @@
     font-weight: 100;
     background: none;
     border: none;
+
+    transition: 0.3s;
 }
 
 .list-nav a:hover, .nav-button:hover{
     cursor: pointer;
-    text-decoration: underline;
+    color: var(--primary);
 }
 
 .languages-component {
@@ -197,6 +205,9 @@
 }
 
 @media (max-width: 768px){
+    #navbar{
+        top: 0px;
+    }
     .list-nav a, .language-toggle, .nav-button{
         font-size: 0.8rem;
     }
