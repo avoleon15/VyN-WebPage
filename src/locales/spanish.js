@@ -147,6 +147,149 @@ export const spanish = {
             "message" : "Mandanos un mensaje"
         },
         "credits" : "© 2026 VYN Logistics. Todos los derechos reservados."
+    },
+    "transportX" : {
+        "transport" : "TRANSPORTES",
+        "Airfreight": {
+            "title": "Air Freight",
+            "pseudoTitle" : "We connect your cargo",
+            "description": "We connect your cargo with the world through the main airlines and international cargo flights.",
+            "services": [
+                {
+                    "icon": "faPlane",
+                    "title": "Import & Export Commercial",
+                    "description": "Shipments through commercial flights of major airlines."
+                },
+                {
+                    "icon": "faPlaneDeparture",
+                    "title": "Import & Export Cargo",
+                    "description": "Exclusive cargo flights for larger volumes."
+                },
+                {
+                    "icon": "faTruck",
+                    "title": "Urban Transport",
+                    "description": "Door to door deliveries collected at source and destination."
+                },
+                {
+                    "icon": "faPlaneCircleCheck",
+                    "title": "Aircraft Charter",
+                    "description": "Full aircraft for high volume special projects."
+                },
+                {
+                    "icon": "faTriangleExclamation",
+                    "title": "Dangerous Goods",
+                    "description": "Specialized handling of dangerous goods under IATA regulations."
+                },
+                {
+                    "icon": "faGauge",
+                    "title": "Express Cargo",
+                    "description": "Urgent shipments with guaranteed minimum delivery times."
+                },
+                {
+                    "icon": "faShield",
+                    "title": "Security & Monitoring",
+                    "description": "Monitored transport with photographic record and seal handling."
+                },
+                {
+                    "icon": "faFileInvoiceDollar",
+                    "title": "Request a Quote",
+                    "description": "Contact us to receive a personalized quote."
+                }
+            ]
+        },
+        "Seafreight": {
+            "title": "Sea Freight",
+            "pseudoTitle" : "Efficient maritime solutions",
+            "description": "Efficient maritime solutions for import and export, with access to the world's major ports.",
+            "services": [
+                {
+                    "icon": "faShip",
+                    "title": "Import & Export FCL",
+                    "description": "Full container load for your cargo, maximum security and efficiency."
+                },
+                {
+                    "icon": "faBoxOpen",
+                    "title": "Import & Export LCL",
+                    "description": "Loose or consolidated cargo, ideal for smaller volumes."
+                },
+                {
+                    "icon": "faTruckRampBox",
+                    "title": "Break Bulk",
+                    "description": "Specialized handling of machinery, piping and oversized cargo."
+                },
+                {
+                    "icon": "faAnchor",
+                    "title": "Vessel Charter",
+                    "description": "Full vessel charter for special projects."
+                },
+                {
+                    "icon": "faTruck",
+                    "title": "Urban Transport",
+                    "description": "Door to door deliveries collected at source and destination."
+                },
+                {
+                    "icon": "faTriangleExclamation",
+                    "title": "Dangerous Goods",
+                    "description": "Specialized logistics for the handling of dangerous goods."
+                },
+                {
+                    "icon": "faShield",
+                    "title": "Security & Monitoring",
+                    "description": "Monitored transport, seal handling and photographic record."
+                },
+                {
+                    "icon": "faFileInvoiceDollar",
+                    "title": "Request a Quote",
+                    "description": "Contact us to receive a personalized quote."
+                }
+            ]
+        },
+        "Overland": {
+            "title": "Overland Transport",
+            "pseudoTitle" : "Complete ground coverage",
+            "description": "Complete ground coverage to move your merchandise quickly and safely throughout the region.",
+            "services": [
+                {
+                    "icon": "faTruck",
+                    "title": "Full Truck Load FTL",
+                    "description": "Full truck dedicated exclusively to your cargo."
+                },
+                {
+                    "icon": "faBoxOpen",
+                    "title": "Less than Truck Load LTL",
+                    "description": "Shared truck space for smaller volumes."
+                },
+                {
+                    "icon": "faRoute",
+                    "title": "Regional Transport",
+                    "description": "Coverage in Guatemala, Mexico, El Salvador, Honduras and more."
+                },
+                {
+                    "icon": "faTruckFast",
+                    "title": "Urban Transport",
+                    "description": "Door to door deliveries within the city and metropolitan area."
+                },
+                {
+                    "icon": "faTriangleExclamation",
+                    "title": "Dangerous Goods",
+                    "description": "Certified specialized transport of dangerous goods."
+                },
+                {
+                    "icon": "faIndustry",
+                    "title": "Industrial Cargo",
+                    "description": "Handling of heavy machinery, industrial equipment and special cargo."
+                },
+                {
+                    "icon": "faShield",
+                    "title": "Security & Monitoring",
+                    "description": "Real time GPS, seal handling and complete photographic record."
+                },
+                {
+                    "icon": "faFileInvoiceDollar",
+                    "title": "Request a Quote",
+                    "description": "Contact us to receive a personalized quote."
+                }
+            ]
+        }
     }
-
 }

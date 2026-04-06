@@ -4,26 +4,28 @@ import seafreight from "../assets/images/seafreight.jpg";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import TransportXService from "../components/TransportXService/TransportXService.jsx";
+import { useLanguage } from '../context/LanguageContext.jsx';
 import './TransportX.css';
 
 function TransportX(){
 
+    const { text } = useLanguage()
     const { transportName } = useParams()
-    //const transport = transportsData[transportName]
+    const transport = text.transportX?.[transportName]
 
-    //if (!transport) return <p>Transporte no encontrado</p>
+    if (!transport) return <p>Transporte no encontrado</p>
 
     return(
         <section id='transportX'>
             <Navbar/>
             <section id='transportX-header'>
                 <div className="transportX-headerbox1">
-                    <h2>Seafreight</h2>
-                    <p>TRANSPORTS</p>
+                    <h2>{transport.title}</h2>
+                    <p>{transport.transport}</p>
                 </div>
                 <div className="transportX-headerbox2">
-                    <h5>Our customers save cost with our shipping services</h5>
-                    <p>Our customers save cost with our shipping services , both full loads FCL, LCL and consolidated . Due to preferential rates with the major shipping companies worldwide, we can offer solutions for shipping to or from Guatemala with rates and transit times very competitive, even for oversized cargo or any other logistics project , taking any need, let us offer our customer support and compliance.</p>
+                    <h5>{transport.pseudoTitle}</h5>
+                    <p>{transport.description}</p>
                 </div>
             </section>
             <section className='transportX-services'>

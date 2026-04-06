@@ -26,6 +26,7 @@
     font-size: 3.75rem;
     margin: 0;
     color: var(--white);
+    text-align: center;
 }
 
 .transportX-headerbox1 p{
