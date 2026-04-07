@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import seafreight from "../assets/images/seafreight.jpg";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar.jsx";
+import TopBar from '../components/TopBar/TopBar.jsx';
 import TransportXService from "../components/TransportXService/TransportXService.jsx";
 import { useLanguage } from '../context/LanguageContext.jsx';
 import './TransportX.css';
@@ -17,11 +18,12 @@ function TransportX(){
 
     return(
         <section id='transportX'>
+            <TopBar />
             <Navbar/>
             <section id='transportX-header'>
                 <div className="transportX-headerbox1">
                     <h2>{transport.title}</h2>
-                    <p>{transport.transport}</p>
+                    <p>{text.transportX.transport}</p>
                 </div>
                 <div className="transportX-headerbox2">
                     <h5>{transport.pseudoTitle}</h5>

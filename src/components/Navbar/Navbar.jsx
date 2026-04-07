@@ -4,11 +4,13 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import vynLogo from "../../assets/images/VyN-logo.png";
 import { useLanguage } from '../../context/LanguageContext.jsx';
+import { useScrollDirection } from '../../utils/useScrollDirection';
 
 import './Navbar.css';
 
 
-function Navbar(){
+function Navbar( { topBarVisible } ){
+    const visible = useScrollDirection()
     const { text, setSpanish, setEnglish } = useLanguage()
     const [open, setOpen] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
@@ -24,7 +26,7 @@ function Navbar(){
     }
 
     return(
-        <nav id="navbar">
+        <nav id="navbar" className={!visible ? 'top-hidden' : ''}>
             <div id="left-nav">
                 <img src={vynLogo} alt='vyn logo'></img>
                 <button className='hamburger-menu' onClick={() => setMenuOpen(!menuOpen)}>
