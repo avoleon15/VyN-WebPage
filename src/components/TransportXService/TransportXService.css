@@ -28,3 +28,51 @@
     color: var(--text-light);
     line-height: 30px;
 }
+
+@media (max-width: 1024px){
+    #TransportXService{
+        padding: 20px;
+    }
+    #TransportXService div{
+        padding: 17px;
+    }
+    #TransportXService h4{
+        font-size: 1.2rem;
+    }
+    #TransportXService p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    #TransportXService{
+        padding: 20px;
+    }
+    #TransportXService div{
+        padding: 17px;
+    }
+    #TransportXService h4{
+        font-size: 1.2rem;
+    }
+    #TransportXService p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 430px){
+    #TransportXService{
+        width: 350px;
+        height: 200px;
+        padding: 20px;
+    }
+    #TransportXService div{
+        padding: 12px;
+    }
+    #TransportXService h4{
+        font-size: 1.1rem;
+        margin: 5px 0px;
+    }
+    #TransportXService p{
+        font-size: 0.9rem;
+    }
+}

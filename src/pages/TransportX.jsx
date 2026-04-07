@@ -23,7 +23,7 @@ function TransportX(){
             <section id='transportX-header'>
                 <div className="transportX-headerbox1">
                     <h2>{transport.title}</h2>
-                    <p>{transport.transport}</p>
+                    <p>{text.transportX.transport}</p>
                 </div>
                 <div className="transportX-headerbox2">
                     <h5>{transport.pseudoTitle}</h5>
