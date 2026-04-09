@@ -61,7 +61,7 @@
 
 @media (max-width: 430px){
     #TransportXService{
-        width: 350px;
+        width: 100%;
         height: 200px;
         padding: 20px;
     }
@@ -73,6 +73,6 @@
         margin: 5px 0px;
     }
     #TransportXService p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }

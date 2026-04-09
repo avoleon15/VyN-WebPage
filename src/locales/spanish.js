@@ -138,7 +138,10 @@ export const spanish = {
         },
         "importantLinks" : {
             "title" : "Otros Enlances",
+            "transports" : "Transportes",
             "services" : "Servicios",
+            "stats" : "Record",
+            "howItWorks" : "Como Funciona",
             "about" : "Sobre Nosotros",
             "home" : "Inicio"
         },

@@ -138,7 +138,10 @@ export const english = {
         },
         "importantLinks" : {
             "title" : "Other Links",
+            "transports" : "Transports",
             "services" : "Services",
+            "stats" : "Track",
+            "howItWorks" : "How It Works",
             "about" : "About Us",
             "home" : "Home"
         },
