@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import interBancoLogo from "../../assets/images/LogoInterBanco.png";
 import vynLogo from "../../assets/images/VyN-logo.png";
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import './Footer.css';
@@ -16,10 +17,15 @@ function Footer(){
 
     return(
         <footer id='footer'>
-            <div className="footer-container">
-                <div className="footer-logo">
-                    <img src={vynLogo} alt='vyn logo'></img>
+            <div className="footer-logos">
+                <div className="logo">
+                    <img src={vynLogo} alt='VYN logo'></img>
                 </div>
+                <div className="logo">
+                    <img src={interBancoLogo} alt='Inter Banco logo'></img>
+                </div>
+            </div>
+            <div className="footer-links">
                 <ul className="footer-list">
                     <p>{text.footer.transports.title}</p>
                     <li><button>{text.footer.transports.seafreight}</button></li>
