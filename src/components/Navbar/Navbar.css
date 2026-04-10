@@ -15,7 +15,7 @@
 
 #left-nav{
     width: 25%;
-    height: 60px;
+    height: 80px;
 
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
     height: 60px;
     padding: 10px 0px;
     background: var(--white);
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 0px 0px 0px 40px;
 }
 
 .list-nav{
@@ -236,6 +236,10 @@
     }
     .list-nav a, .dropdown-component, .nav-button{
         font-size: 0.7rem;
+    }
+    #left-nav{
+        height: 70px;
+    }
 }
 
 @media (max-width: 430px){
@@ -247,6 +251,7 @@
         justify-content: space-between;
         background: var(--white);
         padding: 10px 5%;
+        height: 40px;
     }
     #left-nav img{
         width: auto;

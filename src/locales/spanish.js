@@ -1,4 +1,9 @@
 export const spanish = {
+    "topBar" : {
+        "number" : "+502 1234-5678",
+        "mail" : "vyn@gmail.com",
+        "location" : "3 Avenida 12-38,  7 Nivel oficina 702, Zona 10"
+    },
     "navbar" : {
         "home" : "Inicio",
         "services" : "Servicios",
