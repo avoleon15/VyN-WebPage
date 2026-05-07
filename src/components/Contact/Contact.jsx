@@ -7,6 +7,10 @@ import './Contact.css';
 function Contact(){
     const { text } = useLanguage()
 
+    // TODO: Replace this with your real Google Maps embed src.
+    // Go to maps.google.com → search your address → Share → Embed a map → copy the src URL.
+    const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(text.contact.location)}&t=&z=15&ie=UTF8&iwloc=&output=embed`
+
     return(
         <div id='contact'>
             <div id='contact-container'>
@@ -28,6 +32,18 @@ function Contact(){
                 <div className='contact-forms'>
                     <Forms/>
                 </div>
+            </div>
+            <div id='contact-map'>
+                <iframe
+                    src={mapSrc}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="VYN Logistics location"
+                />
             </div>
         </div>
     )

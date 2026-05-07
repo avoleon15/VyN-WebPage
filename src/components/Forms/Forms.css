@@ -57,6 +57,28 @@
     background: var(--accent);
 }
 
+#contact-submit:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-feedback{
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.form-feedback.success{
+    background: #d4edda;
+    color: #155724;
+}
+
+.form-feedback.error{
+    background: #f8d7da;
+    color: #721c24;
+}
+
 @media (max-width: 430px){
     #contact-row{
         flex-direction: column;

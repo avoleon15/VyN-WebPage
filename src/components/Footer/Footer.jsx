@@ -35,7 +35,7 @@ function Footer(){
                 <ul className="footer-list">
                     <p>{text.footer.importantLinks.title}</p>
                     <li><button onClick={() => navigate('/')}>{text.footer.importantLinks.home}</button></li>
-                    <li><button onClick={() => goToSection('/about')}>{text.footer.importantLinks.about}</button></li>
+                    <li><button onClick={() => navigate('/about')}>{text.footer.importantLinks.about}</button></li>
                     <li><button onClick={() => goToSection('transports')}>{text.footer.importantLinks.transports}</button></li>
                     <li><button onClick={() => goToSection('mainService')}>{text.footer.importantLinks.services}</button></li>
                     <li><button onClick={() => goToSection('stats')}>{text.footer.importantLinks.stats}</button></li>
