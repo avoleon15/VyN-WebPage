@@ -1,20 +1,26 @@
 #navbar{
+    position: fixed;
+    top: 36px;
+    z-index: 100;
     display: flex;
     width: 100%;
     height: 60px;
 
-    padding: 10px 0px 10px 0px;
+    transition: top 0.3s ease;
+}
 
-    background: rgba(0, 0, 0, 0.071);
+#navbar.top-hidden {
+    top: 0;
 }
 
 #left-nav{
-    width: 20%;
-    height: 100%;
+    width: 25%;
+    height: 80px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px;
 }
 
 #left-nav img{
@@ -25,46 +31,246 @@
 
 #center-nav{
     width: 50%;
-}
-
-a{
-    text-decoration: none;
-    color: var(--white);
-}
-
-a:hover{
-    text-decoration: underline;
+    height: 60px;
+    padding: 10px 0px;
+    background: var(--white);
+    border-radius: 0px 0px 0px 40px;
 }
 
 .list-nav{
     padding-left: 0px;
     list-style: none;
+    position: relative;
 
     display: flex;
     justify-content: center;
     gap: 5%;
     align-items: center;
+    color: var(--background-secondary);
+}
+
+.list-nav a, .nav-button{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 100;
+    background: none;
+    border: none;
+
+    transition: 0.3s;
+}
+
+.list-nav a:hover, .nav-button:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    font-size: 1rem;
+    position: absolute;
+    top: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease, padding 1s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.visible-dropdown {
+    max-height: 300px;
+    background: var(--white);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-component{
+    height: 100%;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    padding: 15px;
+    z-index: 101;
+
+    transition: background 0.3s ease-in;
+}
+
+.dropdown-component:hover{
+    background: var(--white-light);
+}
+
+.chevron-dropdown{
+    font-size: 0.8rem;
+    color: var(--text);
+    transition: transform 0.3s ease;
+}
+
+.chevron-dropdown.rotated {
+    transform: rotate(180deg);
+}
+
+.bold{
+    font-weight:900;
 }
 
 #right-nav{
-    width: 30%;
-
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px;
+    background: var(--white);
+    height: 60px;
 }
 
 #login-nav{
     background: none;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
     border-radius: 20px;
-    border: 1px solid var(--white);
+    border: 1px solid black;
+    background: none;
     transition: all 0.7s;
-    color: var(--white);
+    color: none;
 }
 
 #login-nav:hover{
-    background-color: var(--white);
-    color:var(--text);
+    background: var(--text);
+    color: var(--white);
     cursor: pointer;
+}
+
+.hamburger-menu{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 1.7rem;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 60px; right: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    transition: right 0.3s ease;
+    border-top: 1px solid var(--text);
+
+    display: none;
+
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.hamburger-option{
+    border: none;
+    background: none;
+    text-align: start;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.9rem;
+    padding: 20px 10px;
+}
+
+.hamburger-option a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.dropdown-mobile {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 10%;
+}
+
+.dropdown-mobile.open {
+    max-height: 400px;
+}
+
+
+@media (max-width: 1024px){
+    .list-nav a, .dropdown-component, .nav-button{
+        font-size: 0.9rem;
+    }
+    .footer-list a{
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+    .footer-credits{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    #navbar{
+        top: 0px;
+    }
+    .list-nav a, .dropdown-component, .nav-button{
+        font-size: 0.8rem;
+    }
+    #center-nav{
+        width: 65%;
+    }
+    #right-nav{
+        width: 15%;
+    }
+    #login-nav{
+        padding: 7px 14px 7px 14px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px){
+    #login-icon{
+        display: none;
+    }
+    #login-nav{
+        font-size: 0.7rem;
+    }
+    .list-nav a, .dropdown-component, .nav-button{
+        font-size: 0.7rem;
+    }
+    #left-nav{
+        height: 70px;
+    }
+}
+
+@media (max-width: 430px){
+    #navbar{
+        height: 40px;
+    }
+    #left-nav{
+        width: 100%;
+        justify-content: space-between;
+        background: var(--white);
+        padding: 10px 5%;
+        height: 40px;
+    }
+    #left-nav img{
+        width: auto;
+    }
+    #center-nav{
+        display: none;
+    }
+    #right-nav{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-mobile{
+        display: flex;
+        flex-direction: column;
+    }
 }

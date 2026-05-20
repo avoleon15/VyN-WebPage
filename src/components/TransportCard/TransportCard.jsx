@@ -1,19 +1,19 @@
+import { Link } from 'react-router-dom';
 import './TransportCard.css';
 
 function TransportCard(props){
 
-    const {image, title, description} = props;
-    const imageAlt = image + " image"
+    const {image, title, description, button, link} = props;
 
     return(
         <div className='transport-card'>
             <div className='transport-image-container'>
-                <img className='transport-image' src={image} alt={imageAlt}></img>
+                <img className='transport-image' src={image} alt={title}></img>
             </div>
             <div className='transport-info-container'>
                 <h4 className='transport-title'>{title}</h4>
                 <p className='transport-description'>{description}</p>
-                <button className='transport-button'>Mirar mas</button>
+                <Link to={`/transport/${link}`} className='transport-button'>{button}</Link>
             </div>
         </div>
     )

@@ -1,0 +1,173 @@
+#transportX{
+    background: var(--background);
+    margin: 0;
+}
+
+#transportX-header{
+    display: flex;
+}
+
+#transportX-header div{
+    padding-top: 70px;
+    height: 400px;
+}
+
+.transportX-headerbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+
+    background: var(--primary);
+}
+
+.transportX-headerbox1 h2{
+    font-size: 3.5rem;
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.transportX-headerbox1 p{
+    font-size: 1.5rem;
+    color: var(--white-light);
+}
+
+.transportX-headerbox2{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--background-secondary);
+    padding: 0px 5%;
+}
+
+.transportX-headerbox2 p{
+    font-size: 1.1rem;
+    color: var(--text);
+    line-height: 30px;
+}
+
+.transportX-headerbox2 h5{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.transportX-services{
+    display: flex;
+    padding: 100px 4%;
+    gap: 20px;
+}
+
+.transportX-services.inverted{
+    flex-direction: row-reverse;
+    background: var(--background-alternative);
+}
+
+.transportX-servicescontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+}
+
+.transportX-servicesbox{
+    display: flex;
+    gap: 20px;
+}
+
+.transportX-servicesimage{
+    width: 45%;
+    height: 745px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.transportX-servicesimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px){
+    .transportX-headerbox1 h2{
+        font-size: 2.5rem;
+    }
+    .transportX-headerbox1 p{
+        font-size: 1.25rem;
+    }
+    .transportX-headerbox2 h5{
+        font-size: 1.4rem;
+    }
+    .transportX-headerbox2 p{
+        font-size: 1rem;
+    }
+    .transportX-servicesimage{
+        height: 705px;
+    }
+}
+
+@media (max-width: 768px){
+    .transportX-services{
+        flex-wrap: wrap;
+    }
+    .transportX-servicescontainer{
+        width: 100%;
+    }
+    .transportX-servicesimage{
+        width: 100%;
+        height: 280px;
+    }
+    .transportX-services.inverted .transportX-servicesimage{
+        display: none;
+    }
+    #transportX-header{
+        flex-direction: column;
+    }
+    #transportX-header div{
+        height: auto;
+        padding: 120px 0 5% 0;
+    }
+    .transportX-headerbox1{
+        width: 100%;
+    }
+    .transportX-headerbox2{
+        width: 100%;
+    }
+    .transportX-headerbox2 p, .transportX-headerbox2 h5{
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width: 430px){
+    #transportX-header{
+        padding-top: 60px;
+    }
+    #transportX-header div{
+        padding: 20px 0;
+    }
+    .transportX-headerbox1 h2{
+        font-size: 1.5rem;
+    }
+    .transportX-headerbox1 p{
+        font-size: 1rem;
+    }
+    .transportX-headerbox2 h5{
+        font-size: 1.1rem;
+    }
+    .transportX-headerbox2 p{
+        font-size: 0.8rem;
+    }
+    .transportX-services{
+        padding: 40px 0;
+    }
+    .transportX-servicesbox{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10%;
+    }
+    .transportX-servicesimage{
+        display: none;
+    }
+}

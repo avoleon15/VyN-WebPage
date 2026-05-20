@@ -1,28 +1,32 @@
-import Navbar from '../Navbar/Navbar.jsx'
-import './Header.css'
+import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../context/LanguageContext.jsx';
+import './Header.css';
 
 function Header(){
+    const { text } = useLanguage()
+    const navigate = useNavigate()
 
+    const goToSection = (id) => {
+        navigate('/')
+        setTimeout(() => {
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+    }
 
     return(
-        <>
-            <section id="header">
-                <Navbar/>
-                <div id='hero-header'>
-                    <div id="hero-header-left">
-                        <h2 id='hero-title'>Conectamos tu mundo, movemos tu negocio.</h2>
-                        <p id='hero-paragraph'>
-                            Gestionamos toda tu cadena logística, operando en puertos, aeropuertos y aduanas para que tu negocio nunca se detenga.
-                        </p>
-                        <div id='hero-buttons'>
-                            <button className='track-button'>Traquea tu paquete</button>
-                            <button className='services-button'>Ver Transportes</button>
-                        </div>
-                    </div>
+    <section id="header">
+        <div id='hero-header'>
+            <div id="hero-header-left">
+                <h2 id='hero-title'>{text.header.title}</h2>
+                <p id='hero-paragraph'>{text.header.description}</p>
+                <div id='hero-buttons'>
+                    <button className='track-button'>{text.header.button1}</button>
+                    <button className='services-button' onClick={() => goToSection('transports')}>{text.header.button2}</button>
                 </div>
-                
-            </section>
-        </>
+            </div>
+        </div>
+        
+    </section>
     )
 }
 

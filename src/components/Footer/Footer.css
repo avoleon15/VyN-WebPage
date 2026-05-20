@@ -1,28 +1,35 @@
-.footer-container{
-    width: 100%;
+.footer-logos{
+    border-bottom: 1px solid var(--white-light);
+    margin: 40px 10%;
+    padding: 40px 0px;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
-    padding: 60px 0px 30px 0px;
+.footer-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+
+    margin: 60px 0px 30px 0px;
     background: var(--background);
 }
 
-.footer-logo{
-    height: 100px;
+.logo{
+    height: 150px;
     width: auto;
 }
 
-.footer-logo img{
+.logo img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .footer-list{
-    border-left: 1px solid var(--white-light);
-    opacity: 0.8;
-
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -32,10 +39,15 @@
 
 .footer-list p{
     color: var(--text);
+    font-size: 1.1rem;
 }
 
-.footer-list a{
-    color: var(--text);
+.footer-list button, .footer-list a{
+    color: var(--text-light);
+    font-size: 1rem;
+    border: none;
+    background: none;
+    text-decoration: none;
 }
 
 .footer-credits{
@@ -44,5 +56,55 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    line-height: 30px;
+}
 
+@media (max-width: 1024px){
+    .footer-list p{
+        font-size: 1rem;
+    }
+
+    .footer-list button{
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+    .footer-credits{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    .footer-links{
+        margin: 40px 0px 20px 0px;
+    }
+    .logo{
+        height: 100px;
+    }
+    .footer-list{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 430px){
+    .footer-links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-list{
+        padding-left: 40px;
+    }
+    .footer-list p{
+        font-size: 0.8rem;
+    }
+    .logo{
+        height: 75px;
+    }
+    .footer-list button{
+        color: var(--text-light);
+        font-size: 0.8rem;
+    }
+    .footer-credits{
+        font-size: 0.7rem;
+    }
 }
