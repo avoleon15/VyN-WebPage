@@ -28,14 +28,14 @@ function Footer(){
             <div className="footer-links">
                 <ul className="footer-list">
                     <p>{text.footer.transports.title}</p>
-                    <li><button>{text.footer.transports.seafreight}</button></li>
-                    <li><button>{text.footer.transports.airfreight}</button></li>
-                    <li><button>{text.footer.transports.overland}</button></li>
+                    <li><button onClick={() => navigate('/transport/Seafreight')}>{text.footer.transports.seafreight}</button></li>
+                    <li><button onClick={() => navigate('/transport/Airfreight')}>{text.footer.transports.airfreight}</button></li>
+                    <li><button onClick={() => navigate('/transport/Overland')}>{text.footer.transports.overland}</button></li>
                 </ul>
                 <ul className="footer-list">
                     <p>{text.footer.importantLinks.title}</p>
                     <li><button onClick={() => navigate('/')}>{text.footer.importantLinks.home}</button></li>
-                    <li><button onClick={() => goToSection('/about')}>{text.footer.importantLinks.about}</button></li>
+                    <li><button onClick={() => navigate('/about')}>{text.footer.importantLinks.about}</button></li>
                     <li><button onClick={() => goToSection('transports')}>{text.footer.importantLinks.transports}</button></li>
                     <li><button onClick={() => goToSection('mainService')}>{text.footer.importantLinks.services}</button></li>
                     <li><button onClick={() => goToSection('stats')}>{text.footer.importantLinks.stats}</button></li>

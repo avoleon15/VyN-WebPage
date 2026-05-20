@@ -6,9 +6,6 @@
     width: 100%;
     height: 60px;
 
-    padding: 10px 0px 10px 0px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    background: white;
     transition: top 0.3s ease;
 }
 
@@ -18,12 +15,12 @@
 
 #left-nav{
     width: 25%;
-    height: 100%;
+    height: 80px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 10px 0px;
 }
 
 #left-nav img{
@@ -34,6 +31,10 @@
 
 #center-nav{
     width: 50%;
+    height: 60px;
+    padding: 10px 0px;
+    background: var(--white);
+    border-radius: 0px 0px 0px 40px;
 }
 
 .list-nav{
@@ -118,11 +119,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px;
+    background: var(--white);
+    height: 60px;
 }
 
 #login-nav{
     background: none;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
     border-radius: 20px;
     border: 1px solid black;
     background: none;
@@ -154,6 +158,7 @@
     border-top: 1px solid var(--text);
 
     display: none;
+
 }
 
 .mobile-menu.open {
@@ -167,7 +172,7 @@
     text-decoration: none;
     color: var(--text);
     font-size: 0.9rem;
-    padding: 20px 10px 20px 20px;
+    padding: 20px 10px;
 }
 
 .hamburger-option a{
@@ -223,14 +228,17 @@
 }
 
 @media (max-width: 600px){
-    #contact-nav{
-        display: none;
-    }
     #login-icon{
         display: none;
     }
     #login-nav{
         font-size: 0.7rem;
+    }
+    .list-nav a, .dropdown-component, .nav-button{
+        font-size: 0.7rem;
+    }
+    #left-nav{
+        height: 70px;
     }
 }
 
@@ -241,7 +249,9 @@
     #left-nav{
         width: 100%;
         justify-content: space-between;
-        margin: 0px 5%;
+        background: var(--white);
+        padding: 10px 5%;
+        height: 40px;
     }
     #left-nav img{
         width: auto;

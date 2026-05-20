@@ -7,14 +7,15 @@
     z-index: 101;
     transition: transform 0.3s ease;
 
-    background: var(--primary);
+    background: var(--background-alternative);
     display: flex;
     font-size: 0.9rem;
 
     justify-content: space-around;
     align-items: center;
     color: var(--clear);
-    padding: 0;
+
+    padding: 0px;
 }
 
 .top-bar.hidden {
@@ -23,6 +24,7 @@
 
 .top-bar.visible {
     transform: translateY(0);
+    padding: 0px;
 }
 
 @media (max-width: 768px){

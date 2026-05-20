@@ -1,4 +1,9 @@
 export const english = {
+    "topBar" : {
+        "number" : "+502 1234-5678",
+        "mail" : "vyn@gmail.com",
+        "location" : "Paseo Plaza, Zona 10, Guatemala City"
+    },
     "navbar" : {
         "home" : "Home",
         "services" : "Services",
@@ -67,7 +72,7 @@ export const english = {
     "contact" : {
         "title" : "Ready to move your cargo?",
         "description" : "Our team of specialists is ready to help you find the best logistics solution for your business.",
-        "location" : "Guatemala City, Guatemala",
+        "location" : "Paseo Plaza, Zona 10, Guatemala City",
         "phone" : "(+502) 1234 5678",
         "mail" : "vyn@gmail.com"
     },
@@ -155,142 +160,142 @@ export const english = {
         "transport" : "TRANSPORT",
         "Airfreight": {
             "title": "Air Freight",
-            "pseudoTitle" : "We connect your cargo",
-            "description": "We connect your cargo with the world through the main airlines and international cargo flights.",
+            "pseudoTitle" : "Speed without limits",
+            "description": "We connect your cargo with the world through the leading airlines and dedicated international cargo flights, ensuring fast and reliable deliveries.",
             "services": [
                 {
                     "icon": "faPlane",
                     "title": "Import & Export Commercial",
-                    "description": "Shipments through commercial flights of major airlines."
+                    "description": "Shipments through commercial flights of the world's leading airlines, ideal for time-sensitive cargo."
                 },
                 {
                     "icon": "faPlaneDeparture",
                     "title": "Import & Export Cargo",
-                    "description": "Exclusive cargo flights for larger volumes."
+                    "description": "Dedicated cargo flights for larger volumes requiring speed and direct routing."
                 },
                 {
                     "icon": "faTruck",
                     "title": "Urban Transport",
-                    "description": "Door to door deliveries collected at source and destination."
+                    "description": "Door-to-door collection and delivery at origin and destination, fully coordinated by our team."
                 },
                 {
                     "icon": "faPlaneCircleCheck",
                     "title": "Aircraft Charter",
-                    "description": "Full aircraft for high volume special projects."
+                    "description": "Full aircraft charters for high-volume or special projects requiring exclusive capacity."
                 },
                 {
                     "icon": "faTriangleExclamation",
                     "title": "Dangerous Goods",
-                    "description": "Specialized handling of dangerous goods under IATA regulations."
+                    "description": "Certified handling of hazardous materials under IATA regulations, with full compliance documentation."
                 },
                 {
                     "icon": "faGauge",
                     "title": "Express Cargo",
-                    "description": "Urgent shipments with guaranteed minimum delivery times."
+                    "description": "Priority shipments with guaranteed delivery windows for time-critical cargo."
                 },
                 {
                     "icon": "faShield",
                     "title": "Security & Monitoring",
-                    "description": "Monitored transport with photographic record and seal handling."
+                    "description": "Real-time tracking, photographic record, and seal management throughout the entire journey."
                 },
                 {
                     "icon": "faFileInvoiceDollar",
                     "title": "Request a Quote",
-                    "description": "Contact us to receive a personalized quote."
+                    "description": "Contact our team for a tailored air freight quote based on your specific needs."
                 }
             ]
         },
         "Seafreight": {
             "title": "Sea Freight",
-            "pseudoTitle" : "Efficient maritime solutions",
-            "description": "Efficient maritime solutions for import and export, with access to the world's major ports.",
+            "pseudoTitle" : "The world's ports, at your reach",
+            "description": "Reliable maritime solutions for import and export, with direct access to the world's major ports and a network of trusted shipping lines.",
             "services": [
                 {
                     "icon": "faShip",
                     "title": "Import & Export FCL",
-                    "description": "Full container load for your cargo, maximum security and efficiency."
+                    "description": "Full Container Load for exclusive use of your cargo, offering maximum security and cost efficiency."
                 },
                 {
                     "icon": "faBoxOpen",
                     "title": "Import & Export LCL",
-                    "description": "Loose or consolidated cargo, ideal for smaller volumes."
+                    "description": "Less-than-container-load consolidation, ideal for smaller shipments sharing container space."
                 },
                 {
                     "icon": "faTruckRampBox",
                     "title": "Break Bulk",
-                    "description": "Specialized handling of machinery, piping and oversized cargo."
+                    "description": "Specialized handling of oversized machinery, piping, and out-of-gauge cargo."
                 },
                 {
                     "icon": "faAnchor",
                     "title": "Vessel Charter",
-                    "description": "Full vessel charter for special projects."
+                    "description": "Full vessel hire for large-scale or special maritime projects."
                 },
                 {
                     "icon": "faTruck",
                     "title": "Urban Transport",
-                    "description": "Door to door deliveries collected at source and destination."
+                    "description": "Door-to-door coordination at both origin and destination, seamlessly connected to your maritime shipment."
                 },
                 {
                     "icon": "faTriangleExclamation",
                     "title": "Dangerous Goods",
-                    "description": "Specialized logistics for the handling of dangerous goods."
+                    "description": "Specialized logistics for hazardous cargo, compliant with IMDG and international maritime regulations."
                 },
                 {
                     "icon": "faShield",
                     "title": "Security & Monitoring",
-                    "description": "Monitored transport, seal handling and photographic record."
+                    "description": "Monitored transport with seal management and full photographic documentation."
                 },
                 {
                     "icon": "faFileInvoiceDollar",
                     "title": "Request a Quote",
-                    "description": "Contact us to receive a personalized quote."
+                    "description": "Contact our team to receive a customized sea freight proposal."
                 }
             ]
         },
         "Overland": {
             "title": "Overland Transport",
-            "pseudoTitle" : "Complete ground coverage",
-            "description": "Complete ground coverage to move your merchandise quickly and safely throughout the region.",
+            "pseudoTitle" : "Moving the region forward",
+            "description": "Full ground coverage across Central America and Mexico to deliver your cargo on time, with the flexibility and reliability your business demands.",
             "services": [
                 {
                     "icon": "faTruck",
                     "title": "Full Truck Load FTL",
-                    "description": "Full truck dedicated exclusively to your cargo."
+                    "description": "Dedicated full truck exclusively for your cargo, guaranteeing direct routing and fast transit times."
                 },
                 {
                     "icon": "faBoxOpen",
                     "title": "Less than Truck Load LTL",
-                    "description": "Shared truck space for smaller volumes."
+                    "description": "Consolidated truck space for smaller shipments, optimizing cost without sacrificing reliability."
                 },
                 {
                     "icon": "faRoute",
                     "title": "Regional Transport",
-                    "description": "Coverage in Guatemala, Mexico, El Salvador, Honduras and more."
+                    "description": "Cross-border coverage across Guatemala, Mexico, El Salvador, Honduras, and beyond."
                 },
                 {
                     "icon": "faTruckFast",
                     "title": "Urban Transport",
-                    "description": "Door to door deliveries within the city and metropolitan area."
+                    "description": "Last-mile door-to-door delivery within Guatemala City and the metropolitan area."
                 },
                 {
                     "icon": "faTriangleExclamation",
                     "title": "Dangerous Goods",
-                    "description": "Certified specialized transport of dangerous goods."
+                    "description": "Certified specialized transport of hazardous materials with full regulatory compliance."
                 },
                 {
                     "icon": "faIndustry",
                     "title": "Industrial Cargo",
-                    "description": "Handling of heavy machinery, industrial equipment and special cargo."
+                    "description": "Handling of heavy machinery, industrial equipment, and oversized special cargo."
                 },
                 {
                     "icon": "faShield",
                     "title": "Security & Monitoring",
-                    "description": "Real time GPS, seal handling and complete photographic record."
+                    "description": "Real-time GPS tracking, seal management, and complete photographic records throughout transit."
                 },
                 {
                     "icon": "faFileInvoiceDollar",
                     "title": "Request a Quote",
-                    "description": "Contact us to receive a personalized quote."
+                    "description": "Get in touch with our team for a tailored ground transport quote."
                 }
             ]
         }
